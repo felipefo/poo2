@@ -5,10 +5,6 @@ package sr.ifes.edu.br.stream.pipe;
 
 import java.io.*;
 
-/**
- *
- * @author felipe
- */
 
 public class ReverseThread extends Thread {
     private PrintWriter out = null;

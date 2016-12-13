@@ -1,14 +1,11 @@
 /*
-Exemplo de uma classe.
+    Exemplo de uma classe.
  */
 package sr.ifes.edu.br.stream.serialization.exercicio;
 
 import java.util.LinkedList;
 
-/**
- *
- * @author felipe
- */
+
 public class Usuario{
 
     private String nome;

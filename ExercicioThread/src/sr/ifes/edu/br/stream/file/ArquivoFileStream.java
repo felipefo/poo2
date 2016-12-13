@@ -5,10 +5,7 @@ package sr.ifes.edu.br.stream.file;
 
 import java.io.*;
 
-/**
- *
- * @author felipe
- */
+
 public class ArquivoFileStream {
     
     public static void main(String[] args) throws IOException {

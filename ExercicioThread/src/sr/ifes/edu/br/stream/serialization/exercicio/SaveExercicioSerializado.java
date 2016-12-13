@@ -1,14 +1,10 @@
 /*
-Exercicios que mostra como ler um arquivo e salvar os dados de um arquivo em outro arquivo.
+    Exercicios que mostra como ler um arquivo e salvar os dados de um arquivo em outro arquivo.
  */
 package sr.ifes.edu.br.stream.serialization.exercicio;
 
 import java.io.*;
 
-/**
- *
- * @author felipe
- */
 public class SaveExercicioSerializado {
     
     

@@ -3,10 +3,7 @@ Exercicios de programacao em java
  */
 package sr.ifes.edu.br;
 
-/**
- *
- * @author Felipe Frechiani de Oliveira
- */
+
 public class Exercicios {
 
     /**

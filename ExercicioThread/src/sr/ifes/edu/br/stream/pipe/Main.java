@@ -1,14 +1,9 @@
 /*
-Exercicio exemplo de pipe stream entre threads.
+    Exercicio exemplo de pipe stream entre threads.
  */
 package sr.ifes.edu.br.stream.pipe;
 
 import java.io.*;
-
-/**
- *
- * @author felipe
- */
 
 public class Main {
     

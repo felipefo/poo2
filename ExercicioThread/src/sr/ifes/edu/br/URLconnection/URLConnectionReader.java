@@ -3,10 +3,7 @@
  */
 package sr.ifes.edu.br.URLconnection;
 
-/**
- *
- * @author felipe
- */
+
 import java.net.*;
 import java.io.*;
 
