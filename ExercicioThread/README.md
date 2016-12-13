@@ -1,4 +1,4 @@
-# poo2
+# Threads e Serialização
 
 
 a)Altera a classe MoveFile para que a cópia dos arquivos seja feito através de duas Threads.
