@@ -1,8 +1,6 @@
 package fabrica.abstrata.botoes;
 
-import fabrica.abstrata.FabricaAbstrataEnvios;
-import fabrica.abstrata.FabricaTim;
-import fabrica.abstrata.FabricaVivo;
+
 import java.awt.Image;
 import java.io.IOException;
 import java.util.logging.Level;
