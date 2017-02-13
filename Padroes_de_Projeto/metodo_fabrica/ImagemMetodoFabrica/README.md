@@ -1,4 +1,4 @@
 
-Exercício - Gerador de Imagens. 
+Exercício -  Método Fábrica - Gerador de Imagens. 
 
-Altere o exemplo para que passe a gerar gif e bmp.
+Altere o exemplo do gerador de imagems para que passe a gerar os formatos gif e bmp.
