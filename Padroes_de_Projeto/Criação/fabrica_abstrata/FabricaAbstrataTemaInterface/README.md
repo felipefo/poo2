@@ -4,18 +4,18 @@ Exercício -  Fábrica Abstrata  - Modelo de classe tema interface.
 
 Ao executar a classe TelaInicial aparecerá um tema a ser escolhido. Como na imagem abaixo.
 
-![alt text](https://github.com/felipefo/poo2/blob/master/Padroes_de_Projeto/fabrica_abstrata/FabricaAbstrataTemaInterface/tela_inicial.png)
+![alt text](https://github.com/felipefo/poo2/blob/master/Padroes_de_Projeto/Criação/fabrica_abstrata/FabricaAbstrataTemaInterface/tela_inicial.png)
 
 Ao selecionar o tema o usuário pode acessar o menu "Edição" abrirá a tela abaixo:
 
-![alt text](https://github.com/felipefo/poo2/blob/master/Padroes_de_Projeto/fabrica_abstrata/FabricaAbstrataTemaInterface/tela_edicao.png)
+![alt text](https://github.com/felipefo/poo2/blob/master/Padroes_de_Projeto/Criação/fabrica_abstrata/FabricaAbstrataTemaInterface/tela_edicao.png)
 
 
 Altera a classe EditorTexto para que sejam utilizadas as classes BotaoOK e BotaoCancel.
 Esses botões são diferenciados por possuir um ícone. Como destacado na imagem abaixo:
 
 
-![alt text](https://github.com/felipefo/poo2/blob/master/Padroes_de_Projeto/fabrica_abstrata/FabricaAbstrataTemaInterface/tela_tema2.png)
+![alt text](https://github.com/felipefo/poo2/blob/master/Padroes_de_Projeto/Criação/fabrica_abstrata/FabricaAbstrataTemaInterface/tela_tema2.png)
 
 
 Dessa forma, o usuário pode configurar sua tela para utilizar com ou sem ícones.

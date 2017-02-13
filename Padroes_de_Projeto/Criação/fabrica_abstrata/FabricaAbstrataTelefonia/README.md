@@ -6,7 +6,7 @@ O código do exemplo está no pacote fabrica.abstrata
 
 Abaixo o modelo do projeto com a respectivas classes que faltam.
 
-![alt text](https://github.com/felipefo/poo2/blob/master/Padroes_de_Projeto/fabrica_abstrata/FabricaAbstrataTelefonia/diagrama_classe.png)
+![alt text](https://github.com/felipefo/poo2/blob/master/Padroes_de_Projeto/Criação/fabrica_abstrata/FabricaAbstrataTelefonia/diagrama_classe.png)
 
 
 
