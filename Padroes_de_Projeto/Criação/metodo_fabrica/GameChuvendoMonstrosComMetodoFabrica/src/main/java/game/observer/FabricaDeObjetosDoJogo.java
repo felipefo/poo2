@@ -6,16 +6,9 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.newdawn.slick.Image;
 
-/**
- *
- * @author felipe
- */
 public class FabricaDeObjetosDoJogo {
-
     String filePath;
-
     FabricaDeObjetosDoJogo() {
-
         try {
             File file = new File(".");
             filePath = file.getCanonicalPath();
@@ -41,18 +34,10 @@ public class FabricaDeObjetosDoJogo {
         }
         else if (tipoInimigo == 4) {
           inimigo = new InimigoEsperto(filePath + "\\src\\main\\java\\devil3.png", 200, -250);
-
         }
         return inimigo;
     }
 
-    public void criarLand(int tipoLand) {
-        //planodefundo
-
-    }
-
-    public void criarHerois(int tipoHeroi) {
-        //heroi
-    }
+   
 
 }
