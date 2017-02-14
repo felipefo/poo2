@@ -1,6 +1,6 @@
 
 
-Faça os exercícios do padrão método fábrica:
+Faça os exercícios do padrão método fábrica(Todos valem pontos):
 
 
 [Exercício Imagem] (https://github.com/felipefo/poo2/blob/master/Padroes_de_Projeto/Criação/metodo_fabrica/ImagemMetodoFabrica/)
