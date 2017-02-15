@@ -6,23 +6,18 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.newdawn.slick.Image;
 
-public class FabricaDeObjetosDoJogo {
+public class FabricaDeInimigos {
     String filePath;
-    FabricaDeObjetosDoJogo() {
+    FabricaDeInimigos() {
         try {
             File file = new File(".");
             filePath = file.getCanonicalPath();
         } catch (IOException ex) {
-            Logger.getLogger(FabricaDeObjetosDoJogo.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(FabricaDeInimigos.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
-    public Image criarImagensNotificacao(String tipo) {        
-        //gameover
-        //ganhou   
-        return null;
-    }
-
+ 
     public Inimigo criarInimigo(int tipoInimigo) {
         Inimigo inimigo = null;
         if (tipoInimigo == 1) {

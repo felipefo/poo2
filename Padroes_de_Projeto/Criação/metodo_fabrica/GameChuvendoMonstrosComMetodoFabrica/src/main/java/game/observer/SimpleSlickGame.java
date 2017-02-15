@@ -24,7 +24,7 @@ public class SimpleSlickGame extends BasicGame {
     private Inimigo inimigoEsperto;
     private Image gameover;
     private Image ganhouJogo;
-    FabricaDeObjetosDoJogo fabricaDeObjetos;                       
+    FabricaDeInimigos fabricaDeInimigos;                       
     
 
     boolean ganhou=false;
@@ -34,7 +34,7 @@ public class SimpleSlickGame extends BasicGame {
 
     public SimpleSlickGame(String gamename) {
         super(gamename);        
-        fabricaDeObjetos =  new FabricaDeObjetosDoJogo(); 
+        fabricaDeInimigos =  new FabricaDeInimigos(); 
     }
 
     @Override
@@ -50,10 +50,10 @@ public class SimpleSlickGame extends BasicGame {
             heroi = new Heroi(filePath + "\\src\\main\\java\\heroi1.png", 200, 400);
             
             
-            inimigo1 = fabricaDeObjetos.criarInimigo(1);
-            inimigo2 = fabricaDeObjetos.criarInimigo(2);
-            inimigo3 = fabricaDeObjetos.criarInimigo(3);
-            inimigoEsperto = fabricaDeObjetos.criarInimigo(4);
+            inimigo1 = fabricaDeInimigos.criarInimigo(1);
+            inimigo2 = fabricaDeInimigos.criarInimigo(2);
+            inimigo3 = fabricaDeInimigos.criarInimigo(3);
+            inimigoEsperto = fabricaDeInimigos.criarInimigo(4);
             
             
             gameover = new Image(filePath + "\\src\\main\\java\\gameover.png");
