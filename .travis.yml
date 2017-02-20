@@ -4,9 +4,3 @@ jdk:
   
  sudo :false
  
- env:
-  - TEST_DIR=Padroes_de_Projeto\Criação\metodo_fabrica\GameChuvendoMonstrosComMetodoFabrica  
-  
- script:  mvn test -B
- 
- 
