@@ -1,4 +1,3 @@
-before_script: cd Padroes_de_Projeto\Criação\metodo_fabrica\GameChuvendoMonstrosComMetodoFabrica
 
 language: java
 jdk:
