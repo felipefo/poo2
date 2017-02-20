@@ -1,7 +1,8 @@
-after_success: "curl --ftp-create-dirs -T "/home/travis/build/felipefo/poo2/Padroes_de_Projeto/Criação/metodo_fabrica/GameChuvendoMonstrosComMetodoFabrica/target/Game-1.0-SNAPSHOT.jar" -u $FTP_USER:$FTP_PASSWORD ftp://ftp.drivehq.com/felipefo"
 language: java
 jdk:
   - oraclejdk8 
 sudo: false
-script: mvn package -f "Padroes_de_Projeto/Criação/metodo_fabrica/GameChuvendoMonstrosComMetodoFabrica/pom.xml"
+script: 
+ - mvn package -f "Padroes_de_Projeto/Criação/metodo_fabrica/GameChuvendoMonstrosComMetodoFabrica/pom.xml"
+ - curl --ftp-create-dirs -T "/home/travis/build/felipefo/poo2/Padroes_de_Projeto/Criação/metodo_fabrica/GameChuvendoMonstrosComMetodoFabrica/target/Game-1.0-SNAPSHOT.jar" -u $FTP_USER:$FTP_PASSWORD ftp://ftp.drivehq.com/felipefo
  
