@@ -4,6 +4,9 @@ language: java
 jdk:
   - oraclejdk8
   
- mvn test -B
+ env:
+  - TEST_DIR=Padroes_de_Projeto\Criação\metodo_fabrica\GameChuvendoMonstrosComMetodoFabrica  
+  
+ script: mvn test -B
  
  
