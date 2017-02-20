@@ -1,10 +1,6 @@
-
 language: java
 jdk:
-  - oraclejdk8
-  
- sudo :false
-  
- script:  mvn build "Padroes_de_Projeto\Criação\metodo_fabrica\GameChuvendoMonstrosComMetodoFabrica\pom.xml"
- 
+  - oraclejdk8 
+sudo: false
+script: mvn build "Padroes_de_Projeto\\Criação\\metodo_fabrica\\GameChuvendoMonstrosComMetodoFabrica\\pom.xml"
  
