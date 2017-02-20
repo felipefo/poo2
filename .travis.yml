@@ -4,6 +4,6 @@ jdk:
   
  sudo :false
   
- script:  mvn test -B
+ script:  mvn test "Padroes_de_Projeto\Criação\metodo_fabrica\GameChuvendoMonstrosComMetodoFabrica\pom.xml"
  
  
