@@ -6,7 +6,7 @@ script:
  - mvn package -f "Padroes_de_Projeto/Criação/metodo_fabrica/GameChuvendoMonstrosComMetodoFabrica/pom.xml"
  - curl --ftp-create-dirs -T "/home/travis/build/felipefo/poo2/Padroes_de_Projeto/Criação/metodo_fabrica/GameChuvendoMonstrosComMetodoFabrica/target/Game-1.0-SNAPSHOT.jar" -u $FTP_USER:$FTP_PASSWORD ftp://ftp.drivehq.com/felipefo
  - javac RevisaoJava/Edificio.java RevisaoJava/Andar.java
- - mvn.bat
+ - ant "Padroes_de_Projeto/Criação/metodo_fabrica/ImagemMetodoFabrica/
 deploy:
  provider: releases
  api_key: "$GITHUB_OAUTH_TOKEN"
