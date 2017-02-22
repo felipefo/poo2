@@ -6,10 +6,10 @@ public class MetodoFabrica {
 
     public static void main(String[] args) {
         Formato formato;
-        formato = FabricaFormato.geraFormato("metodofabrica.FormatoPng");
+        formato = FabricaFormato.geraFormato("metodoestatico.fabrica.FormatoPng");
         formato.gera();
         
-        formato = FabricaFormato.geraFormato("metodofabrica.FormatoJpeg");
+        formato = FabricaFormato.geraFormato("metodoestatico.fabrica.FormatoJpeg");
         formato.gera();
     }    
 }
