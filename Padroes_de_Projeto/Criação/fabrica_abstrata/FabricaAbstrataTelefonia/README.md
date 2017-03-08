@@ -1,12 +1,12 @@
 
-ExercÌcio -  F·brica Abstrata  - Modelo de classe telefonia. 
+Exerc√≠cio -  F√°brica Abstrata  - Modelo de classe telefonia. 
 
-Altere o cÛdigo do prjeto para adicionar a Operadora Claro que falta no modelo. 
-O cÛdigo do exemplo est· no pacote fabrica.abstrata
+Altere o c√≥digo do projeto para adicionar a Operadora Claro que falta no modelo. 
+O c√≥digo do exemplo est√° no pacote fabrica.abstrata
 
 Abaixo o modelo do projeto com a respectivas classes que faltam.
 
-![alt text](https://github.com/felipefo/poo2/blob/master/Padroes_de_Projeto/CriaÁ„o/fabrica_abstrata/FabricaAbstrataTelefonia/diagrama_classe.png)
+![alt text](https://github.com/felipefo/poo2/blob/master/Padroes_de_Projeto/Cria√ß√£o/fabrica_abstrata/FabricaAbstrataTelefonia/diagrama_classe.png)
 
 
 
