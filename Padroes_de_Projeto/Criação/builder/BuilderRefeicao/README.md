@@ -1,24 +1,9 @@
 
-Exercício -  Fábrica Abstrata  - Modelo de classe tema interface. 
+Exercício -  Builder - 
 
 
-Ao executar a classe TelaInicial aparecerá um tema a ser escolhido. Como na imagem abaixo.
-
-![alt text](https://github.com/felipefo/poo2/blob/master/Padroes_de_Projeto/Criação/fabrica_abstrata/FabricaAbstrataTemaInterface/tela_inicial.png)
-
-Ao selecionar o tema o usuário pode acessar o menu "Edição" abrirá a tela abaixo:
-
-![alt text](https://github.com/felipefo/poo2/blob/master/Padroes_de_Projeto/Criação/fabrica_abstrata/FabricaAbstrataTemaInterface/tela_edicao.png)
+Altere o projeto acima e adicione batata como uma opção para o cliente. Faça a alteração como exibido no diagrama de classe baixo:
 
 
-Altera a classe EditorTexto para que sejam utilizadas as classes BotaoOK e BotaoCancel.
-Esses botões são diferenciados por possuir um ícone. Como destacado na imagem abaixo:
+![alt text](https://github.com/felipefo/poo2/blob/master/Padroes_de_Projeto/Cria%C3%A7%C3%A3o/builder/BuilderRefeicao/exercicio_refeicao_builder_com_batada.png)
 
-
-![alt text](https://github.com/felipefo/poo2/blob/master/Padroes_de_Projeto/Criação/fabrica_abstrata/FabricaAbstrataTemaInterface/tela_tema2.png)
-
-
-Dessa forma, o usuário pode configurar sua tela para utilizar com ou sem ícones.
-Além das classes BotaoOK e BotaoCancel utilize também a classe FabricaAbstrataBotoes como base para criar suas Fábricas concretas.
-Crie classe FabricaPadrão utilizando a classe JButton e para os botões com ícones crie a classe FabricaBotoesIcones utilizando BotaoOK e BotaoCancel.
-Faça também o diagrama de classe da sua solução.
