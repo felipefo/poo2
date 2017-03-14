@@ -14,3 +14,4 @@ RevisaoJava/Andar.class
 *.class
 /Padroes_de_Projeto/Criação/metodo_fabrica/ImagemMetodoFabrica/build/
 /Padroes_de_Projeto/Criação/metodo_fabrica/ImagemMetodoFabrica/dist/
+/Streams_e_Serializacao/LeituraCSV/JavaApplication21/nbproject/private/
