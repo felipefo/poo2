@@ -1,5 +1,5 @@
 
-package sr.ifes.edu.br.stream.pipe;
+package pipe;
 
 
 import java.io.*;

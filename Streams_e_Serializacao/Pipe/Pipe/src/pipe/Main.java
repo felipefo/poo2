@@ -1,7 +1,7 @@
 /*
 Exercicio exemplo de pipe stream entre threads.
  */
-package sr.ifes.edu.br.stream.pipe;
+package pipe;
 
 import java.io.*;
 

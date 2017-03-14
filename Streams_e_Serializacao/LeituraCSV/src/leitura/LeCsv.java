@@ -19,6 +19,7 @@ public class LeCsv {
             c = in.read();            
         }       
         in.close(); 
+        
         //complete o codigo para ler o csv e criar as instancias de cliente.
         //rode o teste MainReadCsvTest.java para testar o seu código.
         
