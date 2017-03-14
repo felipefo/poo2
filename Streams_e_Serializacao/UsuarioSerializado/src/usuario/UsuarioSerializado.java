@@ -1,8 +1,4 @@
-/*
-Exemplo de serializao de uma classe.
-Classe de dominio de usuario    
- */
-package sr.ifes.edu.br.stream.serialization;
+package usuario;
 
 import java.io.Serializable;
 

@@ -1,5 +1,4 @@
-
-package sr.ifes.edu.br.stream.serialization;
+package usuario;
 
 import java.io.*;
 
@@ -8,9 +7,7 @@ public class RecuperarUsuarioSerializado {
     public static void main(String[] args) throws Exception {
         {
             UsuarioSerializado user = null;
-
             String current = new java.io.File(".").getCanonicalPath();
-
             FileInputStream fileIn = new FileInputStream(current + 
                     "\\src\\usuario_serializado.ser");
             ObjectInputStream in = new ObjectInputStream(fileIn);
