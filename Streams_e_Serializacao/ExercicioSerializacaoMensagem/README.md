@@ -6,4 +6,4 @@
 ![alt text](https://github.com/felipefo/poo2/blob/master/Streams_e_Serializacao/ExercicioSerializacaoMensagem/modelo_mensagem.png)
 
 Utilize o projeto  como exemplo:
-![alt text](https://github.com/felipefo/poo2/tree/master/Streams_e_Serializacao/UsuarioSerializado)
+![Projeto serialização de Objeto e Deserialização](https://github.com/felipefo/poo2/tree/master/Streams_e_Serializacao/UsuarioSerializado)
