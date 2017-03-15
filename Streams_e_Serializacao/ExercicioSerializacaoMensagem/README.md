@@ -1,7 +1,7 @@
 
-1)Utilize o modelo abaixo para criar uma inst‚ncia de Mensagem e Usuario.<br>
-2)Salva esses objetos criados utilizando serializaÁ„o
-2)Recupere esses objetos salvos utilizando serializaÁ„o
+1)Utilize o modelo abaixo para criar uma inst√¢ncia de Mensagem e Usu√°rio.<br>
+2)Salva esses objetos criados utilizando serializa√ß√£o
+2)Recupere esses objetos salvos utilizando serializa√ß√£o
 
 ![alt text](https://github.com/felipefo/poo2/blob/master/Streams_e_Serializacao/ExercicioSerializacaoMensagem/modelo_mensagem.png)
 
