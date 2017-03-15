@@ -3,10 +3,7 @@ package refeicao;
 
 import java.io.Serializable;
 
-/**
- *
- * @author felipe
- */
+
 public class Refeicao implements Cloneable, Serializable{    
     private Hamburger hamburger;
     private Bebida bebida;

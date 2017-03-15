@@ -1,10 +1,7 @@
 
 package refeicao;
 
-/**
- *
- * @author felip
- */
+
 public class BuilderRefeicao {
 
     /**

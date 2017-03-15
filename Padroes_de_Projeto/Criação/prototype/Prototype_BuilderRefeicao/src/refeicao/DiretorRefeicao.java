@@ -1,10 +1,7 @@
 
 package refeicao;
 
-/**
- *
- * @author felipe
- */
+
 public class DiretorRefeicao {        
     
     public Refeicao preparaNaoVegetariana(String sabor, String tipoBebida){       

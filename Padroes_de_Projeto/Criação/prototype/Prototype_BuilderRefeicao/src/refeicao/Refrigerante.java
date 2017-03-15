@@ -1,10 +1,7 @@
 
 package refeicao;
 
-/**
- *
- * @author felipe
- */
+
 public class Refrigerante extends Bebida{
     
    

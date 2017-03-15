@@ -2,10 +2,7 @@
 
 package refeicao;
 
-/**
- *
- * @author felipe
- */
+
 public abstract class RefeicaoBuilder {    
     Refeicao refeicao;        
     

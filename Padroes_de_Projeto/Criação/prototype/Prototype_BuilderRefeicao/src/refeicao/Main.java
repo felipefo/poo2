@@ -7,10 +7,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.HashMap;
 
-/**
- *
- * @author felipe
- */
+
 public class Main {
     
     static HashMap<String, Refeicao>  refeicoes = new HashMap<>();

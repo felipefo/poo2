@@ -4,10 +4,7 @@ package refeicao;
 
 import java.io.Serializable;
 
-/**
- *
- * @author felipe
- */
+
 public class Hamburger implements Cloneable, Serializable {
     
     public Object clone(){

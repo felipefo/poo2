@@ -2,10 +2,7 @@
 
 package refeicao;
 
-/**
- *
- * @author felip
- */
+
 public class NonVegetarianoBuilder extends RefeicaoBuilder{
  
     public NonVegetarianoBuilder(Refeicao novaRefeicao){
