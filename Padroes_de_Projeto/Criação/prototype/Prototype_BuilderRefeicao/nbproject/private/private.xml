@@ -2,6 +2,20 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/Users/felip/Documents/GitHub/poo2/Padroes_de_Projeto/Criação/prototype/Prototype_BuilderRefeicao/src/refeicao/VegetarianoBuilder.java</file>
+            <file>file:/C:/Users/felip/Documents/GitHub/poo2/Padroes_de_Projeto/Criação/prototype/Prototype_BuilderRefeicao/src/refeicao/HamburgerCarne.java</file>
+            <file>file:/C:/Users/felip/Documents/GitHub/poo2/Padroes_de_Projeto/Criação/prototype/Prototype_BuilderRefeicao/src/refeicao/RefeicaoBuilder.java</file>
+            <file>file:/C:/Users/felip/Documents/GitHub/poo2/Padroes_de_Projeto/Criação/prototype/Prototype_BuilderRefeicao/src/refeicao/NonVegetarianoBuilder.java</file>
+            <file>file:/C:/Users/felip/Documents/GitHub/poo2/Padroes_de_Projeto/Criação/prototype/Prototype_BuilderRefeicao/src/refeicao/DiretorRefeicao.java</file>
+            <file>file:/C:/Users/felip/Documents/GitHub/poo2/Padroes_de_Projeto/Criação/prototype/Prototype_BuilderRefeicao/src/refeicao/Hamburger.java</file>
+            <file>file:/C:/Users/felip/Documents/GitHub/poo2/Padroes_de_Projeto/Criação/prototype/Prototype_BuilderRefeicao/src/refeicao/Suco.java</file>
+            <file>file:/C:/Users/felip/Documents/GitHub/poo2/Padroes_de_Projeto/Criação/prototype/Prototype_BuilderRefeicao/src/refeicao/Bebida.java</file>
+            <file>file:/C:/Users/felip/Documents/GitHub/poo2/Padroes_de_Projeto/Criação/prototype/Prototype_BuilderRefeicao/src/refeicao/HamburgerVegetariano.java</file>
+            <file>file:/C:/Users/felip/Documents/GitHub/poo2/Padroes_de_Projeto/Criação/prototype/Prototype_BuilderRefeicao/src/refeicao/Refrigerante.java</file>
+            <file>file:/C:/Users/felip/Documents/GitHub/poo2/Padroes_de_Projeto/Criação/prototype/Prototype_BuilderRefeicao/src/refeicao/Main.java</file>
+            <file>file:/C:/Users/felip/Documents/GitHub/poo2/Padroes_de_Projeto/Criação/prototype/Prototype_BuilderRefeicao/src/refeicao/BuilderRefeicao.java</file>
+            <file>file:/C:/Users/felip/Documents/GitHub/poo2/Padroes_de_Projeto/Criação/prototype/Prototype_BuilderRefeicao/src/refeicao/Refeicao.java</file>
+        </group>
     </open-files>
 </project-private>
