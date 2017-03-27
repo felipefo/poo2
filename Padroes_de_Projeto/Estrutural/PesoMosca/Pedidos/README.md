@@ -1,16 +1,22 @@
 ﻿
 Exercício -  Padrão Peso Mosca 
 
-O modelo abaixo exibe um diagrama de um sistema de vendas. A classe StatusItem pode ser compartilhada entre os itens do pedido(ItemPedido), pois ele é imutável, ou seja, seus atributos não mudam depois da sua criação.
+O modelo abaixo exibe um diagrama de um sistema de vendas. A classe StatusItem pode ser compartilhada entre os itens do pedido(ItemPedido), 
+pois ele é imutável, ou seja, seus atributos não mudam depois da sua criação.
 Ela pode ser criada com as seguintes configurações de atributos: <br><br>
 
-'''
+
+![alt text](https://github.com/felipefo/poo2/blob/master/Padroes_de_Projeto/Estrutural/PesoMosca/Pedidos/diagrama_peso_mosca.png)
+
+
+
+```
 new StatusItem(Estado.CARRINHO, true, false);
 new StatusItem(Estado.FECHADO, true, false);
 new StatusItem(Estado.PAGO, true, true);
 new StatusItem(Estado.ENVIADO, false, true);
 new StatusItem(Estado.ENTREGUE, false, true);
-''''
+```
 
 <br>
 <br>
@@ -20,7 +26,7 @@ Crie duas classes Main uma utilizando o padrão e outra sem utilizar o padrão.
 Informe dentro do projeto em um txt qual a diferença de consumo de memória para as duas implementações.
 
 Para a Main sem o padrão faça:
-'''
+```
 public static void main(String[] args) {            
         ArrayList<Pedido> pedidos = new ArrayList();        
         for(int i=0; i< 200000; i++){             
@@ -45,13 +51,13 @@ public static void main(String[] args) {
         System.out.println("KB: " + (double) (Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory()) / 1024);        
         System.out.println(pedidos.size());    
     }
-'''
+```
 
 Para a main com o padrão faça:<br>
 
 Para a Main utilizando o padrão faça:
 
-'''
+```
 public static void main(String[] args) {            
         ArrayList<Pedido> pedidos = new ArrayList();        
         for(int i=0; i< 200000; i++){             
@@ -76,7 +82,7 @@ public static void main(String[] args) {
         System.out.println("KB: " + (double) (Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory()) / 1024);        
         System.out.println(pedidos.size());
     }
-'''
+```
 
 Qual a diferença entre dos dois códigos?? 
 
