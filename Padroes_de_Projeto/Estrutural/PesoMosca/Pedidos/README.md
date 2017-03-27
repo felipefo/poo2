@@ -55,8 +55,6 @@ public static void main(String[] args) {
 
 Para a main com o padrão faça:<br>
 
-Para a Main utilizando o padrão faça:
-
 ```
 public static void main(String[] args) {            
         ArrayList<Pedido> pedidos = new ArrayList();        
