@@ -4,7 +4,7 @@ Exercício -  Padrão Peso Mosca
 O modelo abaixo exibe um diagrama de um sistema de vendas. A classe StatusItem pode ser compartilhada entre os itens do pedido(ItemPedido), pois ele é imutável, ou seja, seus atributos não mudam depois da sua criação.
 Ela pode ser criada com as seguintes configurações de atributos: <br><br>
 
-''''
+'''
 new StatusItem(Estado.CARRINHO, true, false);
 new StatusItem(Estado.FECHADO, true, false);
 new StatusItem(Estado.PAGO, true, true);
