@@ -20,7 +20,7 @@ Crie duas classes Main uma utilizando o padrão e outra sem utilizar o padrão.
 Informe dentro do projeto em um txt qual a diferença de consumo de memória para as duas implementações.
 
 Para a Main sem o padrão faça:
-''''
+'''
 public static void main(String[] args) {            
         ArrayList<Pedido> pedidos = new ArrayList();        
         for(int i=0; i< 200000; i++){             
@@ -45,13 +45,13 @@ public static void main(String[] args) {
         System.out.println("KB: " + (double) (Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory()) / 1024);        
         System.out.println(pedidos.size());    
     }
-''''
+'''
 
 Para a main com o padrão faça:<br>
 
 Para a Main utilizando o padrão faça:
 
-''''
+'''
 public static void main(String[] args) {            
         ArrayList<Pedido> pedidos = new ArrayList();        
         for(int i=0; i< 200000; i++){             
@@ -76,7 +76,7 @@ public static void main(String[] args) {
         System.out.println("KB: " + (double) (Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory()) / 1024);        
         System.out.println(pedidos.size());
     }
-''''
+'''
 
 Qual a diferença entre dos dois códigos?? 
 
