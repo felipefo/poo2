@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="PesoMoscaExemplo">
+  <ClassDiagramComponents>
+    <Class name="FlyweightFactory" package="pesomoscaexemplo" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="flyweights" type="ArrayList&lt;Sprite&gt;" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getFlyweight" returnType="Sprite" visibility="public">
+          <Argument type="Sprites" name="jogador"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Imagem" package="pesomoscaexemplo" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="nomedaImagem" type="String" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="imagem"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="desenharImagem" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="PesoMoscaExemplo" package="pesomoscaexemplo" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Sprite" package="pesomoscaexemplo" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields>
+        <Field name="imagem" type="Imagem" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nomeDaImagem"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="desenharImagem" returnType="void" visibility="public">
+          <Argument type="int" name="x"/>
+          <Argument type="int" name="y"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="imagem" source="pesomoscaexemplo.Sprite" target="pesomoscaexemplo.Imagem" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="flyweights" source="pesomoscaexemplo.FlyweightFactory" target="pesomoscaexemplo.Sprite" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Sprite&gt;"/>
+    <UseRelation source="pesomoscaexemplo.FlyweightFactory" target="pesomoscaexemplo.Sprite" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
