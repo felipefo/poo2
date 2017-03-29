@@ -96,7 +96,7 @@ public class DrawRecOld extends javax.swing.JFrame {
     }//GEN-LAST:event_alturaActionPerformed
 
     private void formMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_formMouseClicked
-        // TODO add your handling code here:                
+        // Posicao clicada e possicao passada pelo usuario                
         DrawRectangle rectangle = new DrawRectangle(evt.getXOnScreen(),evt.getYOnScreen(),
         Integer.parseInt(this.largura.getText()) ,Integer.parseInt(this.altura.getText()));             
         

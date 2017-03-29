@@ -2,7 +2,7 @@
 
 <ClassDiagram name="PesoMoscaExemplo">
   <ClassDiagramComponents>
-    <Class name="FlyweightFactory" package="pesomoscaexemplo" visibility="public" xPosition="20.0" yPosition="20.0">
+    <Class name="FlyweightFactory" package="pesomoscaexemplo" visibility="public" xPosition="120.0" yPosition="11.0">
       <Fields>
         <Field name="flyweights" type="ArrayList&lt;SpriteFlyweight&gt;" visibility="protected"/>
       </Fields>
@@ -15,7 +15,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Imagem" package="pesomoscaexemplo" visibility="public" xPosition="320.0" yPosition="20.0">
+    <Class name="Imagem" package="pesomoscaexemplo" visibility="public" xPosition="562.0" yPosition="27.0">
       <Fields>
         <Field name="nomedaImagem" type="String" visibility="protected"/>
       </Fields>
@@ -28,7 +28,7 @@
         <Method name="desenharImagem" returnType="void" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="PesoMoscaExemplo" package="pesomoscaexemplo" visibility="public" xPosition="620.0" yPosition="20.0">
+    <Class name="PesoMoscaExemplo" package="pesomoscaexemplo" visibility="public" xPosition="55.0" yPosition="334.0">
       <Fields/>
       <Constructors/>
       <Methods>
@@ -37,7 +37,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Ponto" package="pesomoscaexemplo" visibility="public" xPosition="920.0" yPosition="20.0">
+    <Class name="Ponto" package="pesomoscaexemplo" visibility="public" xPosition="256.0" yPosition="364.0">
       <Fields>
         <Field name="x" type="int" visibility="public"/>
       </Fields>
@@ -49,7 +49,7 @@
       </Constructors>
       <Methods/>
     </Class>
-    <Class name="Sprite" package="pesomoscaexemplo" visibility="public" xPosition="1220.0" yPosition="20.0">
+    <Class name="Sprite" package="pesomoscaexemplo" visibility="public" xPosition="542.0" yPosition="259.0">
       <Fields>
         <Field name="imagem" type="Imagem" visibility="protected"/>
       </Fields>
@@ -64,7 +64,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="SpriteFlyweight" package="pesomoscaexemplo" visibility="public" isAbstract="true" xPosition="1520.0" yPosition="20.0">
+    <Class name="SpriteFlyweight" package="pesomoscaexemplo" visibility="public" isAbstract="true" xPosition="219.0" yPosition="192.0">
       <Fields/>
       <Constructors/>
       <Methods>
@@ -75,10 +75,9 @@
     </Class>
   </ClassDiagramComponents>
   <ClassDiagramRelations>
-    <HasRelation name="imagem" source="pesomoscaexemplo.Sprite" target="pesomoscaexemplo.Imagem" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
     <UseRelation source="pesomoscaexemplo.SpriteFlyweight" target="pesomoscaexemplo.Ponto" sourceCardinality="1..1" targetCardinality="1..1"/>
     <UseRelation source="pesomoscaexemplo.Sprite" target="pesomoscaexemplo.Ponto" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation source="pesomoscaexemplo.FlyweightFactory" target="pesomoscaexemplo.SpriteFlyweight" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="imagem" source="pesomoscaexemplo.Sprite" target="pesomoscaexemplo.Imagem" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
     <HasRelation name="flyweights" source="pesomoscaexemplo.FlyweightFactory" target="pesomoscaexemplo.SpriteFlyweight" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;SpriteFlyweight&gt;"/>
     <IsRelation name="is" source="pesomoscaexemplo.Sprite" target="pesomoscaexemplo.SpriteFlyweight"/>
   </ClassDiagramRelations>
