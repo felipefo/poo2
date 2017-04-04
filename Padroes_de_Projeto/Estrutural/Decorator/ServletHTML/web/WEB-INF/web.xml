@@ -9,6 +9,11 @@
         <servlet-name>RecebeJSON</servlet-name>
         <servlet-class>RecebeJSON</servlet-class>
     </servlet>
+    
+    <servlet>
+        <servlet-name>ExemploGet</servlet-name>
+        <servlet-class>ExemploGet</servlet-class>
+    </servlet>
     <servlet>
         <servlet-name>RecebeDados</servlet-name>
         <servlet-class>RecebeDados</servlet-class>
@@ -26,6 +31,11 @@
     <servlet-mapping>
         <servlet-name>RecebeJSON</servlet-name>
         <url-pattern>/RecebeJSON</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>ExemploGet</servlet-name>
+        <url-pattern>/exemploget</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
