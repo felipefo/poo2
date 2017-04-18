@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Multi-file class diagram">
+  <ClassDiagramComponents>
+    <Class name="AbstractPagamentotHandler" package="" visibility="public" isAbstract="true" xPosition="83.0" yPosition="82.0">
+      <Fields>
+        <Field name="tipoPagamento" type="Pagamento" visibility="public"/>
+        <Field name="opcoesDePagamento" type="List&lt;Integer&gt;" visibility="public"/>
+        <Field name="proximaOpcao" type="AbstractPagamentotHandler" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Pagamento" name="tipoPagamento"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="setProximaOpcao" returnType="void" visibility="public">
+          <Argument type="AbstractPagamentotHandler" name="proximaOpcao"/>
+        </Method>
+        <Method name="buscaOpcaoDePagamento" returnType="void" visibility="public">
+          <Argument type="List&lt;Pagamento&gt;" name="opcoesDePagamento"/>
+        </Method>
+        <Method name="pagamentoHandler" returnType="void" visibility="private">
+          <Argument type="Pagamento" name="opcao"/>
+        </Method>
+        <Method name="write" returnType="void" visibility="public" isAbstract="true">
+          <Argument type="String" name="message"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="BoletoPagamentoHandler" package="" visibility="public" xPosition="27.0" yPosition="357.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="write" returnType="void" visibility="public">
+          <Argument type="String" name="message"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="CartaoPagamentoHandler" package="" visibility="public" xPosition="122.0" yPosition="516.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="write" returnType="void" visibility="public">
+          <Argument type="String" name="message"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ChequePagamentoHandler" package="" visibility="public" xPosition="522.0" yPosition="456.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="write" returnType="void" visibility="public">
+          <Argument type="String" name="message"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Client" package="" visibility="public" xPosition="987.0" yPosition="174.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="DinheiroPagamentoHandler" package="" visibility="public" xPosition="309.0" yPosition="369.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="write" returnType="void" visibility="public">
+          <Argument type="String" name="message"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="BoletoPagamentoHandler" target="AbstractPagamentotHandler"/>
+    <IsRelation name="is" source="CartaoPagamentoHandler" target="AbstractPagamentotHandler"/>
+    <IsRelation name="is" source="ChequePagamentoHandler" target="AbstractPagamentotHandler"/>
+    <IsRelation name="is" source="DinheiroPagamentoHandler" target="AbstractPagamentotHandler"/>
+    <HasRelation name="proximaOpcao" source="AbstractPagamentotHandler" target="AbstractPagamentotHandler" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="comando">
+  <ClassDiagramComponents>
+    <Class name="EstacaoDownCommand" package="comando" visibility="public" xPosition="133.0" yPosition="268.0">
+      <Fields>
+        <Field name="radio" type="Radio" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Radio" name="radio"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="execute" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="EstacaoUpCommand" package="comando" visibility="public" xPosition="21.0" yPosition="430.0">
+      <Fields>
+        <Field name="radio" type="Radio" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Radio" name="radio"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="execute" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Radio" package="comando" visibility="public" xPosition="525.0" yPosition="306.0">
+      <Fields>
+        <Field name="listaEstacoes" type="ArrayList" visibility="package"/>
+        <Field name="estacaoIndice" type="int" visibility="package"/>
+        <Field name="estacaoCorrente" type="String" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="ArrayList" name="listaEstacoes"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="aumentarEstacao" returnType="String" visibility="public"/>
+        <Method name="diminuirEstacao" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="SpeechRecogniser" package="comando" visibility="public" xPosition="297.0" yPosition="14.0">
+      <Fields>
+        <Field name="listaComandos" type="ArrayList" visibility="private"/>
+        <Field name="upCommand" type="Command" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getListaComandos" returnType="ArrayList" visibility="public"/>
+        <Method name="setCommands" returnType="void" visibility="public">
+          <Argument type="Command" name="upCommand"/>
+          <Argument type="Command" name="downCommand"/>
+        </Method>
+        <Method name="ouviAumentar" returnType="void" visibility="public"/>
+        <Method name="ouviDiminuir" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Interface name="Command" package="comando" visibility="public" xPosition="21.0" yPosition="86.0">
+      <Methods>
+        <Method name="execute" returnType="String" visibility="public"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="radio" source="comando.EstacaoUpCommand" target="comando.Radio" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="comando.EstacaoUpCommand" target="comando.Command"/>
+    <HasRelation name="radio" source="comando.EstacaoDownCommand" target="comando.Radio" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="comando.EstacaoDownCommand" target="comando.Command"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
