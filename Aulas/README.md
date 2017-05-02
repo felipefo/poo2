@@ -1,25 +1,25 @@
 
 Link para os slides das aulas
 
-IntroduÁ„o
+Introdu√ß√£o
 <br>
 https://drive.google.com/file/d/0B8wEvwAtbLGBMlVMT3NWMHJoS3c/view?usp=sharing
 <br>
 
-Revis„o OrientaÁ„o a Objetos
+Revis√£o Orienta√ß√£o a Objetos
 <br>
 https://drive.google.com/file/d/0B8wEvwAtbLGBNmdBeGw5bFplejQ/view?usp=sharing
 <br>
 
 
+
+
+<br>
+Padr√µes de Cria√ß√£o
+<br>
 https://drive.google.com/file/d/0B8wEvwAtbLGBOG1pTzlEbTI2OVU/view?usp=sharing
-
 <br>
-Padrıes de CriaÁ„o
-<br>
-
-<br>
-Padrıes Estruturais
+Padr√µes Estruturais
 <br>
 
 https://drive.google.com/file/d/0B8wEvwAtbLGBTDhISEpBYnoyYVE/view?usp=sharing
@@ -37,7 +37,7 @@ DAO<br>
 https://drive.google.com/file/d/0B8wEvwAtbLGBYm1NOEVudFp2Umc/view?usp=sharing
 
 <br>
-Padrıes comportamentais
+Padr√µes comportamentais
 <br>
 
 https://drive.google.com/file/d/0B8wEvwAtbLGBQ01uZjdXeDltbVU/view?usp=sharing
