@@ -20,7 +20,7 @@ public class SimpleSlickGame extends BasicGame {
     public Zumbi zumbi3;
     public Image gameover;
     
-    private SetupGame estate = new SetupGame();
+    private SetupGame state = new SetupGame();
   
     public Heroi heroi;
 
@@ -28,7 +28,7 @@ public class SimpleSlickGame extends BasicGame {
         super(gamename);  
         //0 estado jogar (mais facil)
         //1 estado jogar (mais difcil)
-        estate.setupEstadoInicial(0);
+        state.setupEstadoInicial(0);
     }
 
     @Override
@@ -49,7 +49,7 @@ public class SimpleSlickGame extends BasicGame {
             heroi.addMonitores(zumbi2);
             heroi.addMonitores(zumbi3);
 
-            ControleColisao controleColisao = new ControleColisao(estate);
+            ControleColisao controleColisao = new ControleColisao(state);
             heroi.addMonitores(controleColisao);            
             zumbi1.addMonitores(controleColisao);
             zumbi2.addMonitores(controleColisao);
@@ -89,6 +89,6 @@ public class SimpleSlickGame extends BasicGame {
 
     @Override
     public void update(GameContainer gc, int i) throws SlickException {                       
-         estate.getState().doAction(gc,this, i);                 
+         state.getState().doAction(gc,this, i);                 
     }
 }
