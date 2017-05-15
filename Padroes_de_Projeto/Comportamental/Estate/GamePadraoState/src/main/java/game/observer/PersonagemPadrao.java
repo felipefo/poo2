@@ -5,9 +5,9 @@
  */
 package game.observer;
 
-import game.state.SetupGame;
-import game.state.State;
-import game.state.GameOver;
+import game.state.personagem.Pausado;
+import game.state.personagem.StatePersonagem;
+import game.state.personagem.Vivo;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.newdawn.slick.Image;
@@ -21,9 +21,11 @@ public class PersonagemPadrao extends Observavel {
     Image image;
     int posX;
     int posY;
+    private StatePersonagem currentState;
+    private StatePersonagem vivo = new Vivo();
+    private StatePersonagem pausado = new Pausado();
     
-    
-    
+    @SuppressWarnings("OverridableMethodCallInConstructor")
     public PersonagemPadrao(String pathImage, int posX, int posY){        
         this.posX = posX;
         this.posY = posY;
@@ -31,17 +33,31 @@ public class PersonagemPadrao extends Observavel {
             image = new Image(pathImage);
         } catch (SlickException ex) {
             Logger.getLogger(PersonagemPadrao.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        
+        }        
+        vivo.setNextState(pausado);
+        pausado.setNextState(vivo);                
+        setCurrentState( vivo );
     }
        
+    public void setCurrentState(StatePersonagem state){
+        this.currentState  = state;
+    }
     
+     public StatePersonagem getCurrentState(){
+        return this.currentState;
+    }
+    
+     public void goNextState(){
+        this.currentState = this.currentState.getNextState();
+    }    
+   
     public Image getImage(){        
         return this.image;
     }
     public void render(){        
-        //this.currentState.doAction(this);
-        image.draw(this.posX, this.posY);
+       if(this.currentState!=null){
+            this.currentState.doAction(this);        
+       }
     }
     public int getPosX() {
         return posX;

@@ -1,20 +1,10 @@
 package game.observer;
 
-import game.state.GameOver;
-import game.state.SetupGame;
-import game.state.State;
+import game.state.personagem.Pausado;
+import game.state.jogo.SetupGame;
 import java.awt.Rectangle;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import org.newdawn.slick.AppGameContainer;
-import org.newdawn.slick.GameContainer;
-import org.newdawn.slick.Image;
-import org.newdawn.slick.SlickException;
 
-/**
- *
- * @author felipe
- */
+
 public class ControleColisao implements Observador {
 
     private Heroi heroi = null;
@@ -30,11 +20,24 @@ public class ControleColisao implements Observador {
             this.heroi = (Heroi) ob;
          else if (ob instanceof Zumbi) 
             this.zumbi = (Zumbi) ob;        
-        if (this.heroi != null && this.zumbi != null) {
+        
+         if (this.heroi != null && this.zumbi != null) {
+             Rectangle first = new Rectangle(heroi.getPosX() + heroi.getImage().getWidth() -10  , heroi.getPosY(),
+                    heroi.getImage().getWidth() - 5, heroi.getImage().getHeight());
+             
+            Rectangle second = new Rectangle(zumbi.getPosX() + zumbi.getImage().getWidth()/2, zumbi.getPosY(),
+                    zumbi.getImage().getWidth(), zumbi.getImage().getHeight());
+            if (first.intersects(second)) {                
+                if(!(zumbi.getCurrentState() instanceof Pausado))
+                    zumbi.goNextState();
+                return;
+            }             
+         }       
+         if (this.heroi != null && this.zumbi != null) {
             Rectangle first = new Rectangle(heroi.getPosX(), heroi.getPosY(),
-                    heroi.getImage().getWidth() - 20, heroi.getImage().getHeight() - 20);
-            Rectangle second = new Rectangle(zumbi.getPosX(), zumbi.getPosY(),
-                    zumbi.getImage().getWidth() - 20, zumbi.getImage().getHeight() - 20);
+                    heroi.getImage().getWidth(), heroi.getImage().getHeight());
+            Rectangle second = new Rectangle(zumbi.getPosX() -10, zumbi.getPosY(),
+                    zumbi.getImage().getWidth() - zumbi.getImage().getWidth()/2 -10, zumbi.getImage().getHeight());
             if (first.intersects(second)) {                
                 gameState.setNextState();
             }

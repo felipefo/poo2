@@ -1,10 +1,13 @@
 
-package game.state;
+package game.state.jogo;
 
 import game.observer.SimpleSlickGame;
 import org.newdawn.slick.GameContainer;
 
-
+/**
+ *
+ * @author felipe
+ */
 public class GameOver extends State {
 
     @Override
