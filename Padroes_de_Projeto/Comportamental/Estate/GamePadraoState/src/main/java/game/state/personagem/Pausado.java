@@ -2,9 +2,7 @@ package game.state.personagem;
 
 import game.observer.PersonagemPadrao;
 
-
 public class Pausado extends StatePersonagem {
-
     private int count = 0;
     private int x = -1;
     private  int y = -1;
@@ -15,7 +13,6 @@ public class Pausado extends StatePersonagem {
             this.y = personagem.getPosY();
         }
         count++;
-        System.out.println(count);
         if (count == 5000) {            
             //saindo do modo pausado.
             personagem.goNextState();

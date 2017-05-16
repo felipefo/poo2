@@ -24,13 +24,13 @@ public class SimpleSlickGame extends BasicGame {
     public Zumbi zumbi3;
     public Image gameover;
 
-    private SetupGame estate = new SetupGame();
+    private SetupGame state = new SetupGame();
 
     public Heroi heroi;
 
     public SimpleSlickGame(String gamename) {
         super(gamename);
-        estate.setupEstadoInicial(0);
+        state.setupEstadoInicial(0);
     }
 
     @Override
@@ -51,7 +51,7 @@ public class SimpleSlickGame extends BasicGame {
             heroi.addMonitores(zumbi2);
             heroi.addMonitores(zumbi3);
 
-            ControleColisao controleColisao = new ControleColisao(estate);
+            ControleColisao controleColisao = new ControleColisao(state);
             heroi.addMonitores(controleColisao);
             zumbi1.addMonitores(controleColisao);
             zumbi2.addMonitores(controleColisao);
@@ -64,16 +64,16 @@ public class SimpleSlickGame extends BasicGame {
 
     @Override
     public void render(GameContainer gc, Graphics g) throws SlickException {
-        g.drawImage(land, 0, 0);
-        heroi.render();
-        zumbi2.render();
-        zumbi3.render();
-        zumbi1.render();
-
-        if (gc.isPaused()) {
+        
+        if (!gc.isPaused()) {
+            g.drawImage(land, 0, 0);
+            heroi.render();
+            zumbi2.render();
+            zumbi3.render();
+            zumbi1.render();
+        }else if (gc.isPaused()) {
             gameover.draw(200, 200);
         }
-
     }
 
     public static void main(String[] args) {
@@ -89,9 +89,9 @@ public class SimpleSlickGame extends BasicGame {
 
     @Override
     public void update(GameContainer gc, int i) throws SlickException {
-        if (estate != null) {
-            if (estate.getState() != null) {
-                estate.getState().doAction(gc, this, i);
+        if (state != null) {
+            if (state.getState() != null) {
+                state.getState().doAction(gc, this, i);
             }
         }
     }
