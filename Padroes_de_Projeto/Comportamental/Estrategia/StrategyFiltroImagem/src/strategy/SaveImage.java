@@ -1,19 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package strategy;
 
-/**
- *
- * @author felipe
- */
+
 import java.io.*;
 import java.util.TreeSet;
 import java.awt.*;
 import java.awt.event.*;
-import java.awt.geom.AffineTransform;
 import java.awt.image.*;
 import javax.imageio.*;
 import javax.swing.*;
@@ -48,7 +40,7 @@ public class SaveImage extends Component implements ActionListener {
             
             String current = new java.io.File(".").getCanonicalPath();                   
             
-            bi = ImageIO.read(new File(current + "\\src\\" + "image.jpg"));
+            bi = ImageIO.read(new File(current + "\\src\\" + "praia.jpeg"));            
             w = bi.getWidth(null);
             h = bi.getHeight(null);
             if (bi.getType() != BufferedImage.TYPE_INT_RGB) {
@@ -91,7 +83,8 @@ public class SaveImage extends Component implements ActionListener {
         lastOp = opIndex;
         switch (opIndex) {
  
-        case 0: /* original */              
+        case 0: /* original */
+                biFiltered = bi;
                 return; 
         case 1:  /* low pass filter */
         case 2:  /* sharpen */
@@ -99,7 +92,6 @@ public class SaveImage extends Component implements ActionListener {
             op = new ConvolveOp(new Kernel(3, 3, data),
                                 ConvolveOp.EDGE_NO_OP,
                                 null);
-   
             break;
         case 3 : /* lookup */
             byte lut[] = new byte[256];
