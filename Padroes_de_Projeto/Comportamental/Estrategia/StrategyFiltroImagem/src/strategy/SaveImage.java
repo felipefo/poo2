@@ -34,6 +34,7 @@ public class SaveImage extends Component implements ActionListener {
         0.1f, 0.2f, 0.1f,
         0.1f, 0.1f, 0.1f
     };
+    
  
     public SaveImage() {
         try {
