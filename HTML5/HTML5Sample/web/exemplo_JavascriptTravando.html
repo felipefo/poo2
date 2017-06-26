@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+</head>
+<body>
+<input id="start" type="button" value="Iniciar"    onclick="updateTexto();"/>
+<input type="button" value="Nao pode ser clicado"  onclick="mensagem();"/>
+<input type="text" value="Done" id='done'/>
+
+<script>
+	function mensagem() {
+		alert('Oi');
+	}
+    function updateTexto(){		   
+        var max = 500000;
+        document.getElementById("done").value = "";
+        for (var i = 0; i < max; i++) {		   
+                 document.getElementById("done").value  = max;	
+                 console.log(max);
+            }
+	}
+</script>
+</body>
+</html>

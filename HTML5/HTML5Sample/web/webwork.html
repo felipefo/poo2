@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+ </head>
+ <body>
+
+<input id="start" type="button" value="Iniciar"    onclick="iniciar();"/>
+<input type="button" value="Nao pode ser clicado"  onclick="mensagem();"/>
+<input type="text" value="0" id='result'/>
+
+<script>  
+    function iniciar(){
+        var worker = new Worker('worker.js');
+        worker.onmessage = function (event) {         
+        document.getElementById('result').value = event.data;
+    };
+    }
+    
+    function mensagem() {	
+	alert('Oi');
+   }
+  </script>
+ </body>
+</html>
