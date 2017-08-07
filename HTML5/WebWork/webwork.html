@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <title>Worker example: One-core computation</title>
+ </head>
+ <body>
+<p>The highest prime number discovered so far is: <output id="result"></output></p>
+<input type="text" value="Pode ser editado"/>
+<script>  
+    var worker = new Worker('file:///C:/Users/felip/Documents/GitHub/poo2/HTML5/WebWork/worker.js');
+    worker.onmessage = function (event) {
+    document.getElementById('result').textContent = event.data;
+  };
+  </script>
+ </body>
+</html>
