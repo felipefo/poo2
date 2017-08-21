@@ -2,12 +2,13 @@
 
 Exercício
 
-Utilize o LeCsv.java  para ler o arquivo.csv e preencher os dados contidos nesse arquivo criando objetos da classe Cliente. <br>
+Utilize o LeCsv.java para ler o arquivo.csv. Com esses dados crie objetos da classe Cliente. 
+<br>
 
-Você precisa completar o código na classe LeCsv.java para que ele faça o split das informações do arquivo csv lidas e então criar instâncias da classe cliente.<br>
+Você precisa completar o código na classe LeCsv.java para que ele faça o split das informações do arquivo csv através do ";" 
  
- //complete o codigo para ler o csv e criar as instancias de cliente.<br><br>
+ //complete o codigo para da classe LeCsv.java para ler o csv e criar as instancias de cliente.<br><br>
  //rode o teste MainReadCsvTest.java para testar o seu código.<br>
-
+  LinkedList<Cliente> clientes = leitorCsv.leCsvClientes(); // cria a lista de clientes. 
 
 Para testar o projeto rode o arquivo de teste MainReadCsvTest.java
