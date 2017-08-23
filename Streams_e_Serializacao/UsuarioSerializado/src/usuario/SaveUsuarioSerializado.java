@@ -8,15 +8,15 @@ public class SaveUsuarioSerializado {
         
         String current = new java.io.File( "." ).getCanonicalPath();        
 
-        UsuarioSerializado usuarioSerializado = new UsuarioSerializado();
-        usuarioSerializado.setEmail("joao@email.com");        
-        usuarioSerializado.setNome("joao");
-        usuarioSerializado.setSenha("password");
+        Usuario usuario = new Usuario();
+        usuario.setEmail("joao@email.com");        
+        usuario.setNome("joao");
+        usuario.setSenha("password");
                
         FileOutputStream fileSerializado = new FileOutputStream( 
                 current + "\\src\\usuario_serializado.ser");                
         ObjectOutputStream outputSerializado = new ObjectOutputStream(fileSerializado);        
-        outputSerializado.writeObject(usuarioSerializado);
+        outputSerializado.writeObject(usuario);
         outputSerializado.close();
         
         System.out.println("Usuario Salvo");        

@@ -3,7 +3,7 @@ package usuario;
 import java.io.Serializable;
 
 
-public class UsuarioSerializado implements Serializable{
+public class Usuario implements Serializable{
 
     String nome;
     private String email;

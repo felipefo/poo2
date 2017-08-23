@@ -6,12 +6,12 @@ public class RecuperarUsuarioSerializado {
 
     public static void main(String[] args) throws Exception {
         {
-            UsuarioSerializado user = null;
+            Usuario user = null;
             String current = new java.io.File(".").getCanonicalPath();
             FileInputStream fileIn = new FileInputStream(current + 
                     "\\src\\usuario_serializado.ser");
             ObjectInputStream in = new ObjectInputStream(fileIn);
-            user = (UsuarioSerializado) in.readObject();
+            user = (Usuario) in.readObject();
             in.close();
 
             System.out.println("Deserializando Usuario...");
