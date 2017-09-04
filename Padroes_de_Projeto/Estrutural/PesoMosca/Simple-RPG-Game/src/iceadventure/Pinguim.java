@@ -9,12 +9,8 @@ import org.newdawn.slick.SlickException;
 
 class Pinguim extends Animal {    
     Image image;
-    int posX;
-    int posY;
-    public Pinguim(int posX, int posY){
-        super("Pinguim");
-        this.posX = posX;
-        this.posY = posY;
+      public Pinguim(){
+        super("pinguim");
         try {
              String path = filePath + "\\images\\Penguine.png";            
             image = new Image(path);
@@ -25,25 +21,11 @@ class Pinguim extends Animal {
     public Image getImage(){        
         return this.image;
     }
-    public void render(){
-        image.draw(this.posX, this.posY);
+    public void render(int x, int y){
+        image.draw(x, y);
     }
-    public int getPosX() {
-        return posX;
-    }
-    public void setPosX(int posX) {
-        this.posX = posX;
-    }
-    public int getPosY() {
-        return posY;
-    }
-
-    public void setPosY(int posY) {
-        this.posY = posY;
-    }
-
     @Override
     public String getTipo() {
-       return "Pinguim"; 
+       return "pinguim"; 
     }
 }

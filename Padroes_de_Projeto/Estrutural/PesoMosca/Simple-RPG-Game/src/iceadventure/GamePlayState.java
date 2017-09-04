@@ -23,11 +23,11 @@ public class GamePlayState extends BasicGameState {
     int tileHeight, tileWidth;
     int stateid;
     AnimalFlyWeight animalFactory;
-    int bearX = 500;
-    int bearY = 500;
     
     Bear bearMovimento; 
     Bear bearParado; 
+    Bear pinguim;
+
 
     public GamePlayState(int id) {
         stateid = id;
@@ -50,9 +50,10 @@ public class GamePlayState extends BasicGameState {
         blocked = new boolean[map.getWidth()][map.getHeight()];
         animalFactory = new AnimalFlyWeight();
         initializeBlocked();        
-        bearMovimento = (Bear) animalFactory.getTipoAnimal("bear");        
+        bearMovimento = (Bear) animalFactory.getTipoAnimal("bear"); 
         bearParado = (Bear) animalFactory.getTipoAnimal("bear");
-        
+        animalFactory.addAnimal(new Pinguim());
+        animalFactory.addAnimal(new IceAge());
     }
 
     @Override
@@ -61,9 +62,7 @@ public class GamePlayState extends BasicGameState {
         if (gc.getInput().isKeyPressed(Input.KEY_ESCAPE)) {
             sbg.enterState(IceAdventure.MENUSTATE);
         }
-        bearX++;
-        bearMovimento.setPosX(bearX);
-        bearParado.setPosX(bearX);
+       
         
     }
 
@@ -72,13 +71,13 @@ public class GamePlayState extends BasicGameState {
         
         camera.translate(g, player);
         map.render(0, 0);
-        player.render();                            
-        bearMovimento.render();
-        bearMovimento.setPosX(600);
-        bearMovimento.setPosY(600);
-        bearParado.render();
-        bearParado.setPosX(500);
-        bearParado.setPosY(500);
+        player.render();                                    
+        ((Bear)animalFactory.getTipoAnimal("bear")).render(600,600);        
+        ((Bear)animalFactory.getTipoAnimal("bear")).render(500,500);
+        ((Pinguim)animalFactory.getTipoAnimal("pinguim")).render(400,400);
+        ((IceAge)animalFactory.getTipoAnimal("iceage")).render(700, 100);        
+        ((IceAge)animalFactory.getTipoAnimal("iceage")).render(200, 500);
+        
         
     }
 
