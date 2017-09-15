@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/Users/felip/Documents/GitHub/poo2/Padroes_de_Projeto/Estrutural/PesoMosca/FlyWeightPedido/src/Item.java</file>
+            <file>file:/C:/Users/felip/Documents/GitHub/poo2/Padroes_de_Projeto/Estrutural/PesoMosca/FlyWeightPedido/src/Pedido.java</file>
+            <file>file:/C:/Users/felip/Documents/GitHub/poo2/Padroes_de_Projeto/Estrutural/PesoMosca/FlyWeightPedido/src/FazPedidoOtmizado.java</file>
+            <file>file:/C:/Users/felip/Documents/GitHub/poo2/Padroes_de_Projeto/Estrutural/PesoMosca/FlyWeightPedido/src/FazPedido.java</file>
+            <file>file:/C:/Users/felip/Documents/GitHub/poo2/Padroes_de_Projeto/Estrutural/PesoMosca/FlyWeightPedido/src/FlyweightStatusItem.java</file>
+            <file>file:/C:/Users/felip/Documents/GitHub/poo2/Padroes_de_Projeto/Estrutural/PesoMosca/FlyWeightPedido/src/StatusItem.java</file>
+        </group>
     </open-files>
 </project-private>

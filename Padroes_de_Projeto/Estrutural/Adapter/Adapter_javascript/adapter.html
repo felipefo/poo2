@@ -1,0 +1,51 @@
+<html>
+
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+
+
+
+<script>
+
+var LoggerFactory = {
+    getLogger: function() {
+        return window.console;
+    }, 
+};
+/* Example Usage */
+var logger = LoggerFactory.getLogger();
+logger.log("something to log");
+
+
+var AjaxLogger = {
+    sendLog: function(info) {
+        var data = encodeURIComponent(info);
+        jQuery.ajax({
+            url: "http://localhost/log",
+            data: data
+        });
+    },    
+};
+
+var AjaxLoggerAdapter = {
+    log: function(info) {
+        AjaxLogger.sendLog(info);
+    }
+};
+
+var LoggerFactory = {
+    getLogger: function() {
+        return AjaxLoggerAdapter;
+    }, 
+};
+var logger = LoggerFactory.getLogger();
+logger.log("something to log");
+
+
+
+</script>
+
+<html>
+

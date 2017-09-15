@@ -11,6 +11,7 @@ public abstract class Animal {
      
     String tipo;
     String filePath = "";
+    
     public Animal(String tipo){
       this.tipo = tipo;
       File file = new File(".");
