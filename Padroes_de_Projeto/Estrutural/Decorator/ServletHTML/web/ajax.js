@@ -14,7 +14,7 @@ function onloadBody(){
   } 
   var xhr = new XMLHttpRequest();
   xhr.open(form.method, form.action, true);
-  xhr.setRequestHeader('Content-Type', 'text/plain; charset=UTF-8');  
+  xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');  
   xhr.send(JSON.stringify(data));
   xhr.onloadend = function () {    
   };
