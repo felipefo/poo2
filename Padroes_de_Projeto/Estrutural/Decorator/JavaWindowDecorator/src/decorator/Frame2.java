@@ -6,12 +6,12 @@ import java.awt.event.*;
 
 public class Frame2 extends JFrame {
   ResizableDecorator label1 =
-    new ResizableDecorator(new JLabel(" Label1"));
+    new ResizableDecorator(new JLabel("Resizable Decorator Label"));
   ResizableDecorator button1 =
-    new ResizableDecorator(new JButton("Button"));
+    new ResizableDecorator(new JButton("Resizable Decorator Button"));
   BorderDecorator label2 =
     new BorderDecorator(new ResizableDecorator(
-            new JLabel("doubly decorated")));
+            new JLabel("Double decorator")));
 
   public Frame2() {
     try {

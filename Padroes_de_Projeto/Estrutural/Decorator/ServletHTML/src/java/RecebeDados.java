@@ -26,7 +26,8 @@ public class RecebeDados extends HttpServlet {
             out.println("<h1>Servidor Recebeu:<br></h1>"); 
             out.println("<h1>Nome: " + request.getParameter("nome") + "</h1>");
             out.println("<h1>Email: " + request.getParameter("email") + "</h1>");
-            out.println("<h1>Endereco: " + request.getParameter("endereco") + "</h1>");
+            out.println("<h1>Identidade: " + request.getParameter("endereco") + "</h1>");
+            out.println("<h1>Endereco: " + request.getParameter("identidade") + "</h1>");
             out.println("</body>");
             out.println("</html>");
         } finally {

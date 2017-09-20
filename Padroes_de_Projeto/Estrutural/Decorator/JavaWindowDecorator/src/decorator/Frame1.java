@@ -8,11 +8,11 @@ import java.awt.event.*;
 public class Frame1 extends JFrame {
 
   JBorderLabel label1 =
-    new JBorderLabel("JLabel Subclass");//sem o padrao...
+    new JBorderLabel("Sem o padrão");//sem o padrao...
   BorderDecorator label2 =
-    new BorderDecorator(new JLabel("Decorated JLabel"));
+    new BorderDecorator(new JLabel("Decorator JLabel"));
   BorderDecorator textArea = new BorderDecorator(
-          new JTextArea("TextArea"));
+          new JTextArea("Decorator textArea"));
 
   public Frame1() {
     try {

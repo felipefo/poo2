@@ -12,7 +12,6 @@ import festa.dominio.Festa;
  */
 public class Vinho extends DecoracoesAdicionais {
 
-   // Festa festa;
 
     public Vinho(Festa festa) {
         this.festa = festa;

@@ -42,8 +42,7 @@ public class FestaServlet extends HttpServlet {
 
             if (request.getParameterMap() != null) {
                 if (request.getParameterMap().containsKey("Flores")) {
-                    festa = new Flores(festa);
-                    //festa = new Flores(festa);
+                    festa = new Flores(festa);                  
                 }
                 if (request.getParameterMap().containsKey("Cerveja")) {
                     festa = new Cerveja(festa);
