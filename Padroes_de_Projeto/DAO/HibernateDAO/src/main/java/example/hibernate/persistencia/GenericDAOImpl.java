@@ -10,7 +10,7 @@ import org.hibernate.Transaction;
 
 public abstract class GenericDAOImpl<T> implements GenericDAO<T>
 {
-    protected static Session sessao;
+    protected Session sessao;
     protected Transaction transacao;
     /** Creates a new instance of GenericDAO */
    
