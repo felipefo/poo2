@@ -22,6 +22,7 @@ public class Veiculo {
     @GeneratedValue(generator = "increment")    
     @GenericGenerator(name = "increment", strategy = "increment")
     private int id;
+    
     private String marca;
     private String modelo;
     private String ano;
