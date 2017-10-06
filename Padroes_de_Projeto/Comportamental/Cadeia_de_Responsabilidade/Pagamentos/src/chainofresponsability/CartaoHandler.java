@@ -7,17 +7,17 @@ import javax.swing.JOptionPane;
 
 
 public class CartaoHandler  extends AbstractPagamentoHandler {
-
     
-    public static final int CARTAO =1;
-  
+    public static final int CARTAO =1;  
     protected int handlePagamento(int valor) {
-        int valorRestante = super.perguntaPagamento("Qual o valor para o pagamento com cartão?", valor);
-        JOptionPane.showMessageDialog(null, "Pago com cartão. Valor restante:" + valorRestante);
+        int valorRestante = super.perguntaPagamento("Qual o valor para o pagamento"
+                + " com cartão?", valor);
+        JOptionPane.showMessageDialog(null, "Pago com cartão. Valor restante:" 
+                + valorRestante);
         return valorRestante;
     }
     
-     @Override
+    @Override
     protected int getTipoPagamento() {
         return CARTAO;
     }
