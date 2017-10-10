@@ -115,9 +115,9 @@ public class TelaPagamentos extends javax.swing.JFrame {
        PagamentoHandler cartao = new CartaoHandler();
        boleto.setNextHandler(cartao);
        ArrayList lista = new ArrayList();       
-       if(caixaSelecaoBoleto.isEnabled())
+       if(caixaSelecaoBoleto.isSelected())
           lista.add(BoletoHandler.BOLETO);
-       if(caixaSelecaoCartao.isEnabled())
+       if(caixaSelecaoCartao.isSelected())
           lista.add(CartaoHandler.CARTAO);                     
        boleto.processHander(lista, Integer.parseInt(valorFatura.getText()));                       
        

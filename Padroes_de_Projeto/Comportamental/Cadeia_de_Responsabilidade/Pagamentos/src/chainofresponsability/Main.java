@@ -1,7 +1,5 @@
 package chainofresponsability;
 
-import java.util.ArrayList;
-
 
 public class Main {    
     /**

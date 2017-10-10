@@ -16,6 +16,7 @@ public abstract class AbstractPagamentoHandler implements PagamentoHandler {
               valor = handlePagamento(valor);                               
         if (pagamentoHandler != null && valor >0)
             this.pagamentoHandler.processHander(lista, valor);
+        
     }
     protected abstract int getTipoPagamento();
     protected int perguntaPagamento(String mensagem, int valor){
