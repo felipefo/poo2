@@ -23,7 +23,7 @@ public class SetupGame {
         return this.currentState;
     }    
     
-    public void setNextState(){
+    public void goNextState(){
         this.currentState = this.currentState.getNextState();
     }
     

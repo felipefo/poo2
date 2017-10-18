@@ -19,12 +19,10 @@ public class ControleColisao implements Observador {
         if (ob instanceof Heroi) 
             this.heroi = (Heroi) ob;
          else if (ob instanceof Zumbi) 
-            this.zumbi = (Zumbi) ob;        
-        
+            this.zumbi = (Zumbi) ob;                
          if (this.heroi != null && this.zumbi != null) {
              Rectangle first = new Rectangle(heroi.getPosX() + heroi.getImage().getWidth() -10  , heroi.getPosY(),
-                    heroi.getImage().getWidth() - 5, heroi.getImage().getHeight());
-             
+                    heroi.getImage().getWidth() - 5, heroi.getImage().getHeight());             
             Rectangle second = new Rectangle(zumbi.getPosX() + zumbi.getImage().getWidth()/2, zumbi.getPosY(),
                     zumbi.getImage().getWidth(), zumbi.getImage().getHeight());
             if (first.intersects(second)) {                
@@ -39,7 +37,7 @@ public class ControleColisao implements Observador {
             Rectangle second = new Rectangle(zumbi.getPosX() -10, zumbi.getPosY(),
                     zumbi.getImage().getWidth() - zumbi.getImage().getWidth()/2 -10, zumbi.getImage().getHeight());
             if (first.intersects(second)) {                
-                gameState.setNextState();
+                gameState.goNextState();
             }
         }
     }

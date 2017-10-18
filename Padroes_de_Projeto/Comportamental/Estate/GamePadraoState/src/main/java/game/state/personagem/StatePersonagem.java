@@ -3,8 +3,6 @@ package game.state.personagem;
 
 import game.observer.PersonagemPadrao;
 
-
-
 public abstract class StatePersonagem {
     StatePersonagem nextState;
 
