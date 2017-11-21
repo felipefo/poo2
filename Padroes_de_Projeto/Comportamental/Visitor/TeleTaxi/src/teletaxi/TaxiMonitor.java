@@ -23,7 +23,8 @@ public class TaxiMonitor implements TransportVisitor {
     @Override
     public void visit(Taxi taxi) {   
         System.out.println("Nome=" + taxi.getName());        
-        //TODO
+        //TODO: assim como a velocidade exiba as varias posicoes de gps.
+        
         for(Integer velo : this.velocidade){
             System.out.println("Velocidade:" + velo +  "\n");
         }
