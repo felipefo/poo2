@@ -3,36 +3,32 @@ package teletaxi;
 
 public abstract class Taxi implements Visitavel{
     
-    private int velocidade=0;
+    protected Velocidade velocidade= new Velocidade();    
+    private GPS gps = new GPS();    
+    private String name="";    
     
-    private GPS gps = new GPS();
-            
-    private int lat =0;
-    private int log =0;
-        
-    public void acceptVisitor(TaxiVisitor visitor){
-        visitor.visit(this);        
-    }
     
-    public int getLat(){
-        return this.gps.getLatitudeCorrente();
+    public Taxi(String name ){
+        this.name = name;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+    public void acceptVisitor(TransportVisitor visitor){
+        velocidade.acceptVisitor(visitor);
+        gps.acceptVisitor(visitor);                
+        visitor.visit(this);
+    }    
     
-    public int getLog(){
-        return this.gps.getLongitudeCorrente();
-    }
-    
-    public void setVelocidade(int velocidade){
-        this.velocidade = velocidade;
-    }
-    
-    public int getVelecidade(){
-        return this.velocidade;
-    }
     public abstract void parar();    
-    public abstract void andarParaFrente();    
-    public abstract void virarEsquerda();    
-    public abstract void virarDireita();    
-    public abstract void andarParaTras();    
+    public abstract void andarParaFrente(int velocidade);    
+    public abstract void virarEsquerda(int velocidade);    
+    public abstract void virarDireita(int velocidade);    
+    public abstract void andarParaTras(int velocidade);    
     
 }

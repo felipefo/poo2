@@ -4,6 +4,6 @@ package teletaxi;
 
 public interface Visitavel {
     
-   public void acceptVisitor(TaxiVisitor visitor);
+   public void acceptVisitor(TransportVisitor visitor);
     
 }

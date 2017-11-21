@@ -1,22 +1,32 @@
 
 package teletaxi;
 public class TaxiCarro extends Taxi {
+
+    public TaxiCarro(String name) {
+        super(name);
+    }
     @Override
-    public void parar(){System.out.println("Apertar o freio");}
+    public void parar(){
+        System.out.println("Apertar o freio");
+        this.velocidade.setVelocidade(0);
+    }
     @Override
-    public void andarParaFrente() {System.out.println("Acelerar");}
+    public void andarParaFrente(int velocidade) {
+        System.out.println("Acelerar"); 
+        this.velocidade.setVelocidade(velocidade); }
     @Override
-    public void virarEsquerda() {        
-        System.out.println("Dar a seta");
-        System.out.println("Virar voltante para direira");}
-    @Override
-    public void virarDireita() {
+    public void virarEsquerda(int velocidade) {        
         System.out.println("Dar a seta");
         System.out.println("Virar voltante para direira");
-    }
+        this.velocidade.setVelocidade(velocidade); }
     @Override
-    public void andarParaTras() {
-        System.out.println("Acelerar contrario");        
-    }
-    
+    public void virarDireita(int velocidade) {
+        System.out.println("Dar a seta");
+        System.out.println("Virar voltante para direira");
+        this.velocidade.setVelocidade(velocidade); }
+    @Override
+    public void andarParaTras(int velocidade) {
+        System.out.println("Acelerar contrario");  
+        this.velocidade.setVelocidade(velocidade); 
+    }   
 }
