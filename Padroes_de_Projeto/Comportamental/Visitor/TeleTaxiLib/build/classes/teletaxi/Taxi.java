@@ -5,7 +5,8 @@ public abstract class Taxi implements Visitavel{
     
     protected Velocidade velocidade= new Velocidade();    
     private GPS gps = new GPS();    
-    private String name="";    
+    private String name="";  
+    private Motor  motor = new Motor();
     
     
     public Taxi(String name ){
@@ -22,6 +23,7 @@ public abstract class Taxi implements Visitavel{
     public void acceptVisitor(TransportVisitor visitor){
         velocidade.acceptVisitor(visitor);
         gps.acceptVisitor(visitor);                
+        motor.acceptVisitor(visitor);
         visitor.visit(this);
     }    
     
