@@ -11,17 +11,27 @@ public class MotoristaAutonomo implements TaxiVisitor {
         this.comandosDestino = comandos;
     }
     @Override
-    public void visit(Taxi taxi) {        
+    public void visit(Taxi taxi) {          
+        RegistrarGPS regGPS = new RegistrarGPS();                                
         for(String comando: comandosDestino){
             if(comando.equalsIgnoreCase("Frente")){
-                taxi.andarParaFrente();        
+                taxi.andarParaFrente();                        
+                
             }else if(comando.equalsIgnoreCase("Direita")){
                 taxi.virarDireita();        
+                
             }else if(comando.equalsIgnoreCase("Esquerda")){
                 taxi.virarEsquerda();        
+                
             }else if(comando.equalsIgnoreCase("Parar")){
                 taxi.parar();
+                
             }
         }
+        for(PosicaoGPS pos : regGPS.getPosicaoGPS() ){
+            System.out.println("Lat:" +  pos.lat + " Long:" + pos.log);    
+        }
+        
+        
     }
 }

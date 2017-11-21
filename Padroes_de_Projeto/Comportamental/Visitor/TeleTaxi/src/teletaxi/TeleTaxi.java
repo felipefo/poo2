@@ -22,11 +22,11 @@ public class TeleTaxi {
         MotoristaAutonomo motorista = new MotoristaAutonomo(comandos);
         taxiCarro.acceptVisitor(motorista);        
         taxiCarro.acceptVisitor(registrarVelocidade);
-        
+               
         TaxiMoto taxiMoto = new TaxiMoto();
         taxiMoto.acceptVisitor(motorista);        
         taxiMoto.acceptVisitor(registrarVelocidade);
-        
+                
         
         
     }
