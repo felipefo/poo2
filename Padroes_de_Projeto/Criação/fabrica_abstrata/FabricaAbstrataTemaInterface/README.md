@@ -1,24 +1,25 @@
 
-ExercÌcio -  F·brica Abstrata  - Modelo de classe tema interface. 
+Exerc√≠cio -  F√°brica Abstrata  - Modelo de classe tema interface. 
+Esse aplicativo de edi√ß√£o de texto permite ao usu√°rio customizar a interface. Dessa forma, ele pode alterar se ele quer uma interface com √≠cones ou sem √≠cones. 
 
 
-Ao executar a classe TelaInicial aparecer· um tema a ser escolhido. Como na imagem abaixo.
+Ao executar a classe TelaInicial aparecer√° um tema a ser escolhido. Como na imagem abaixo.
 
-![alt text](https://github.com/felipefo/poo2/blob/master/Padroes_de_Projeto/CriaÁ„o/fabrica_abstrata/FabricaAbstrataTemaInterface/tela_inicial.png)
+![alt text](https://github.com/felipefo/poo2/blob/master/Padroes_de_Projeto/Cria√ß√£o/fabrica_abstrata/FabricaAbstrataTemaInterface/tela_inicial.png)
 
-Ao selecionar o tema o usu·rio pode acessar o menu "EdiÁ„o" abrir· a tela abaixo:
+Ao selecionar o tema o usu√°rio pode acessar o menu "Edi√ß√£o" que abrir√° a tela abaixo:
 
-![alt text](https://github.com/felipefo/poo2/blob/master/Padroes_de_Projeto/CriaÁ„o/fabrica_abstrata/FabricaAbstrataTemaInterface/tela_edicao.png)
-
-
-Altera a classe EditorTexto para que sejam utilizadas as classes BotaoOK e BotaoCancel.
-Esses botıes s„o diferenciados por possuir um Ìcone. Como destacado na imagem abaixo:
+![alt text](https://github.com/felipefo/poo2/blob/master/Padroes_de_Projeto/Cria√ß√£o/fabrica_abstrata/FabricaAbstrataTemaInterface/tela_edicao.png)
 
 
-![alt text](https://github.com/felipefo/poo2/blob/master/Padroes_de_Projeto/CriaÁ„o/fabrica_abstrata/FabricaAbstrataTemaInterface/tela_tema2.png)
+Altere a classe EditorTexto para que sejam utilizadas as classes BotaoOK e BotaoCancel.
+Esses bot√µes s√£o diferenciados por possuir um √≠cone. Como destacado na imagem abaixo:
 
 
-Dessa forma, o usu·rio pode configurar sua tela para utilizar com ou sem Ìcones.
-AlÈm das classes BotaoOK e BotaoCancel utilize tambÈm a classe FabricaAbstrataBotoes como base para criar suas F·bricas concretas.
-Crie classe FabricaPadr„o utilizando a classe JButton e para os botıes com Ìcones crie a classe FabricaBotoesIcones utilizando BotaoOK e BotaoCancel.
-FaÁa tambÈm o diagrama de classe da sua soluÁ„o.
+![alt text](https://github.com/felipefo/poo2/blob/master/Padroes_de_Projeto/Cria√ß√£o/fabrica_abstrata/FabricaAbstrataTemaInterface/tela_tema2.png)
+
+
+Dessa forma, o usu√°rio pode configurar sua tela para utilizar com ou sem √≠cones.
+Al√©m das classes BotaoOK e BotaoCancel utilize tamb√©m a classe FabricaAbstrataBotoes como base para criar suas F√°bricas concretas.
+Crie classe FabricaPadr√£o utilizando a classe JButton e para os bot√µes com √≠cones crie a classe FabricaBotoesIcones utilizando BotaoOK e BotaoCancel.
+Fa√ßa tamb√©m o diagrama de classe da sua solu√ß√£o.
