@@ -8,6 +8,6 @@ Exercício - Nessa atividade você usará classes já criadas para ler um arquiv
   //complete o codigo para da classe LeCsv.java para ler o csv e criar as instancias de cliente.<br><br>
 
 2)Para testar o projeto rode o arquivo de teste MainReadCsvTest.java. Esse código já está criado<br>
-LinkedList<Cliente> clientes = leitorCsv.leCsvClientes(); // cria a lista de clientes. 
+ele utiliza a seguinte linha para recuperar as informações de clientes: LinkedList<Cliente> clientes = leitorCsv.leCsvClientes(); // cria a lista de clientes. A soma total deve ser 25.000
 
 
