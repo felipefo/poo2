@@ -8,7 +8,7 @@ import java.sql.*;
 
 public class SelectTable {
 
-    public synchronized void selectTable() {
+    public  void selectTable() {
 
         Connection c = null;
         Statement stmt = null;
@@ -16,7 +16,7 @@ public class SelectTable {
             Class.forName("org.sqlite.JDBC");
             c = DriverManager.getConnection("jdbc:sqlite:test.db");
             c.setAutoCommit(false);
-            System.out.println("Opened database successfully");
+            //System.out.println("Opened database successfully");
 
             stmt = c.createStatement();
             ResultSet rs = stmt.executeQuery("SELECT * FROM COMPANY;");
@@ -39,6 +39,6 @@ public class SelectTable {
         } catch (Exception e) {
             System.err.println(e.getClass().getName() + ": " + e.getMessage());            
         }
-        System.out.println("Operation done successfully");
+       // System.out.println("Operation done successfully");
     }
 }

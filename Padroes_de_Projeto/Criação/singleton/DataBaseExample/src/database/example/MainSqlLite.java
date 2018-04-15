@@ -17,6 +17,12 @@ public class MainSqlLite
       usingThreads();
       usingThreads();
       usingThreads();
+      usingThreads();
+      usingThreads();
+      usingThreads();
+      usingThreads();
+      usingThreads();
+      
   }
   
   public static void usingThreads(){

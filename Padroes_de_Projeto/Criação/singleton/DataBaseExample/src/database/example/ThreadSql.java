@@ -5,12 +5,17 @@ public class ThreadSql implements Runnable
 {
    public void run()
    {
-      InsertRecords insert = new InsertRecords();
-      insert.insertRecords();            
+      
+      InsertRecord insert = new InsertRecord();
+      for(int i=0;i< 100;i++)
+        insert.insertRecords();            
+      
+     // UpdatetRecord update = new UpdatetRecord();
+     // update.updateRecord();      
       SelectTable select = new SelectTable();
-      select.selectTable();      
+      select.selectTable();                  
       DeleteRecord delete = new DeleteRecord();
-      delete.deleteRecord();              
+      delete.deleteRecord();                  
    }
 }   
       

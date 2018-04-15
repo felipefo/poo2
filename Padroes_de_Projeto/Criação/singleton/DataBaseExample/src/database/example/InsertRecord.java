@@ -4,31 +4,32 @@ package database.example;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
+import java.util.concurrent.ThreadLocalRandom;
 
 
-public class CreateTable {
+public class InsertRecord {
 
-    public  void  createTable() {
+    public  void insertRecords() {
+
         Connection c = null;
         Statement stmt = null;
         try {
             Class.forName("org.sqlite.JDBC");
             c = DriverManager.getConnection("jdbc:sqlite:test.db");
-            System.out.println("Opened database successfully");
+            c.setAutoCommit(false);
+            //System.out.println("Opened database successfully");
 
             stmt = c.createStatement();
-            String sql = "CREATE TABLE COMPANY "
-                    + "(ID INT         NOT NULL,"
-                    + " NAME           TEXT    NOT NULL, "
-                    + " AGE            INT     NOT NULL, "
-                    + " ADDRESS        CHAR(50), "
-                    + " SALARY         REAL)";
+            String sql = "INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY) "
+                    + "VALUES ( 1 , 'Paul', 32, 'California', 20000.00 );";
             stmt.executeUpdate(sql);
+
             stmt.close();
+            c.commit();
             c.close();
         } catch (Exception e) {
             System.err.println(e.getClass().getName() + ": " + e.getMessage());            
         }
-        System.out.println("Table created successfully");
+        //System.out.println("Records created successfully");
     }
 }

@@ -16,7 +16,7 @@ public class CreateTable {
 
             stmt = c.createStatement();
             String sql = "CREATE TABLE COMPANY "
-                    + "(ID INT PRIMARY KEY     NOT NULL,"
+                    + "(ID INT         NOT NULL,"
                     + " NAME           TEXT    NOT NULL, "
                     + " AGE            INT     NOT NULL, "
                     + " ADDRESS        CHAR(50), "

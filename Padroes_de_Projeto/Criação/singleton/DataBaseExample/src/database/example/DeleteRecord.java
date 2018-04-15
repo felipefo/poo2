@@ -6,17 +6,17 @@ import java.sql.*;
 
 public class DeleteRecord {
 
-    public synchronized void deleteRecord() {
+    public  void deleteRecord() {
         Connection c = null;
         Statement stmt = null;
 
         try {
             Class.forName("org.sqlite.JDBC");
             c = DriverManager.getConnection("jdbc:sqlite:test.db");
-            System.out.println("Opened database successfully");
+            //System.out.println("Opened database successfully");
 
             stmt = c.createStatement();
-            String sql = "DELETE from COMPANY where ID=2;";
+            String sql = "DELETE from COMPANY;";
             stmt.executeUpdate(sql);
 
             ResultSet rs = stmt.executeQuery("SELECT * FROM COMPANY;");
@@ -40,7 +40,6 @@ public class DeleteRecord {
             System.err.println(e.getClass().getName() + ": " + e.getMessage());            
         }
 
-        System.out.println(
-                "Operation done successfully");
+       
     }
 }

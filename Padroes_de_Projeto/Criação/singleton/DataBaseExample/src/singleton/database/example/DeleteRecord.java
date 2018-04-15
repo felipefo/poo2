@@ -13,11 +13,10 @@ public class DeleteRecord {
         try {
            
             c = DBConnection.getInstance();
-            
-            System.out.println("Remove");
+                       
 
             stmt = c.createStatement();
-            String sql = "DELETE from COMPANY where ID=2;";
+            String sql = "DELETE from COMPANY where ID=1;";
             stmt.executeUpdate(sql);
             //c.commit();
 
@@ -40,8 +39,6 @@ public class DeleteRecord {
             
         } catch (Exception e) {
             System.err.println(e.getClass().getName() + ": " + e.getMessage());            
-        }
-
-        System.out.println("Operation done successfully");
+        }       
     }
 }
