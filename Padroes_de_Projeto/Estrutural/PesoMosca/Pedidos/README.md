@@ -23,7 +23,7 @@ new StatusItem(Estado.ENTREGUE, false, true);
 
 Implemente o modelo primeiramente sem utilizar o padrão FlyWeight e depois implemente com o padrão. 
 Crie duas classes Main uma utilizando o padrão e outra sem utilizar o padrão.  
-Informe dentro do projeto em um txt qual a diferença de consumo de memória para as duas implementações.
+Informe no exercício qual a diferença de consumo de memória para as duas implementações.
 
 Para a Main sem o padrão faça:
 ```
