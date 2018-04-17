@@ -13,6 +13,6 @@ public class MainReadCsv {
        LeCsv leitorCsv = new LeCsv();               
        LinkedList<Cliente> clientes = leitorCsv.leCsvClientes();
        TotalCompras compras = new TotalCompras();
-       compras.calculaSomaTotal(clientes);        
+       System.out.println(compras.calculaSomaTotal(clientes));        
     }         
 }

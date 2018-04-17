@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package flyweightbrowser;
 
 import java.io.IOException;
@@ -30,7 +26,6 @@ public class Browser {
 
         for ( SimpleNodeIterator iterator = list.elements(); iterator.hasMoreNodes(); ) {
             Tag tag = (Tag) iterator.nextNode();
-           // System.out.println(tag.getAttribute("src"));                        
             flyWeightImage.addImage(tag.getAttribute("src"));                        
         }                
     }
