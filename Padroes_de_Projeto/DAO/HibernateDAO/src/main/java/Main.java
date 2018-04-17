@@ -16,6 +16,12 @@ public class Main {
            veiculo.setModelo("Uno");
            veiculo.setQuilometragem("1000");
            veiculo.setTipo("carro");              
+           
+           
+           List lista = veiculoDAO.buscaVeiculosApartirDoAno(2009);
+           
+           
+           
            veiculoDAO.inserir(veiculo);           
            List<Veiculo> listar = veiculoDAO.listar(Veiculo.class);
            for(Veiculo printVeiculo : listar){
