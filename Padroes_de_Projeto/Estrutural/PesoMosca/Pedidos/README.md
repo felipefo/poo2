@@ -22,10 +22,10 @@ new StatusItem(Estado.ENTREGUE, false, true);
 <br>
 
 Implemente o modelo primeiramente sem utilizar o padrão FlyWeight e depois implemente com o padrão. 
-Crie duas classes Main uma utilizando o padrão e outra sem utilizar o padrão.  
+Crie duas classes Main, uma utilizando o padrão e outra sem utilizar o padrão.  
 Informe no exercício qual a diferença de consumo de memória para as duas implementações.
 
-Para a Main sem o padrão faça:
+Para a Main com a implementação sem o padrão faça:
 ```
 public static void main(String[] args) {            
         ArrayList<Pedido> pedidos = new ArrayList();        
@@ -53,7 +53,8 @@ public static void main(String[] args) {
     }
 ```
 
-Para a main com o padrão faça:<br>
+Para a main com a implementação do padrão faça:<br>
+Perceba que essa chamada abaixo destacada utiliza um método estático da classe FlyweightStatusItem, mas você pode implementar sem utilizar um método estático. FlyweightStatusItem.get(StatusItem.Estado.CARRINHO)
 
 ```
 public static void main(String[] args) {            
@@ -82,7 +83,7 @@ public static void main(String[] args) {
     }
 ```
 
-Qual a diferença entre dos dois códigos?? 
+Qual a diferença entre dos dois códigos?
 
 
 
