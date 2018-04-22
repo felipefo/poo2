@@ -12,7 +12,7 @@ public class FazPedido {
      * @param args the command line arguments
      */
     public static void main(String[] args) {            
-        ArrayList<Pedido> pedidos = new ArrayList();        
+        ArrayList<Pedido> listaPedidos = new ArrayList();        
         for(int i=0; i< 200000; i++){             
             Pedido pedido = new Pedido();
             Item item1 = new Item();
@@ -30,10 +30,10 @@ public class FazPedido {
             pedido.addItemPedido(item1);
             pedido.addItemPedido(item2);
             pedido.addItemPedido(item3);                                   
-            pedidos.add(pedido);
+            listaPedidos.add(pedido);
         }
         System.out.println("KB: " + (double) (Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory()) / 1024);        
-        System.out.println(pedidos.size());    
+        System.out.println(listaPedidos.size());    
     }
     
 }
