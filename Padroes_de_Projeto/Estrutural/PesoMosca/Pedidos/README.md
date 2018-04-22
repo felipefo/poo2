@@ -17,6 +17,7 @@ new StatusItem(Estado.PAGO, true, true);
 new StatusItem(Estado.ENVIADO, false, true);
 new StatusItem(Estado.ENTREGUE, false, true);
 ```
+Nesse exemplo Estado é definido como um enum
 
 <br>
 <br>
@@ -48,6 +49,7 @@ public static void main(String[] args) {
             pedido.addItemPedido(item3);                                   
             listaPedidos.add(pedido);
         }
+        //calcula a quantidade de memória consumida pelo programa java
         System.out.println("KB: " + (double) (Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory()) / 1024);        
         System.out.println(listaPedidos.size());    
     }
@@ -78,6 +80,7 @@ public static void main(String[] args) {
             pedido.addItemPedido(item3);          
             listaPedidos.add(pedido);                         
         }
+        //calcula a quantidade de memória consumida pelo programa java
         System.out.println("KB: " + (double) (Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory()) / 1024);        
         System.out.println(listaPedidos.size());
     }
