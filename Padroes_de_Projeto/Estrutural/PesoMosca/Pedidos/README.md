@@ -17,7 +17,12 @@ new StatusItem(Estado.PAGO, true, true);
 new StatusItem(Estado.ENVIADO, false, true);
 new StatusItem(Estado.ENTREGUE, false, true);
 ```
-Nesse exemplo Estado é definido como um enum
+Nesse exemplo Estado é definido como um enum:
+
+enum Estado {
+       CARRINHO, FECHADO, PAGO, ENVIADO , ENTREGUE
+    }   
+
 
 <br>
 <br>
