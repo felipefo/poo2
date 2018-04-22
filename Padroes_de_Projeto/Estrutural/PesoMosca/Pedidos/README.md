@@ -5,7 +5,7 @@ O modelo abaixo exibe um diagrama de um sistema de vendas.
 
 ![alt text](https://github.com/felipefo/poo2/blob/master/Padroes_de_Projeto/Estrutural/PesoMosca/Pedidos/diagrama_peso_mosca.png)
 
-Obs. Um item deve ter somente um único StatusItem 
+Obs. Um item deve ter somente um StatusItem 
 
 A classe StatusItem pode ser compartilhada entre os itens do pedido(ItemPedido), 
 pois ele é imutável, ou seja, seus atributos não mudam depois da sua criação.
