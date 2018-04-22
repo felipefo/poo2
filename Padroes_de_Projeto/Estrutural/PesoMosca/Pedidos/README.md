@@ -28,7 +28,7 @@ Informe no exercício qual a diferença de consumo de memória para as duas impl
 Para a Main com a implementação sem o padrão faça:
 ```
 public static void main(String[] args) {            
-        ArrayList<Pedido> pedidos = new ArrayList();        
+        ArrayList<Pedido> listaPedidos = new ArrayList();        
         for(int i=0; i< 200000; i++){             
             Pedido pedido = new Pedido();
             Item item1 = new Item();
@@ -46,7 +46,7 @@ public static void main(String[] args) {
             pedido.addItemPedido(item1);
             pedido.addItemPedido(item2);
             pedido.addItemPedido(item3);                                   
-            pedidos.add(pedido);
+            listaPedidos.add(pedido);
         }
         System.out.println("KB: " + (double) (Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory()) / 1024);        
         System.out.println(pedidos.size());    
@@ -58,7 +58,7 @@ Perceba que essa chamada abaixo destacada utiliza um método estático da classe
 
 ```
 public static void main(String[] args) {            
-        ArrayList<Pedido> pedidos = new ArrayList();        
+        ArrayList<Pedido> listaPedidos = new ArrayList();        
         for(int i=0; i< 200000; i++){             
             Pedido pedido = new Pedido();
             Item item1 = new Item();
@@ -76,7 +76,7 @@ public static void main(String[] args) {
             pedido.addItemPedido(item1);
             pedido.addItemPedido(item2);
             pedido.addItemPedido(item3);          
-            pedidos.add(pedido);                         
+            listaPedidos.add(pedido);                         
         }
         System.out.println("KB: " + (double) (Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory()) / 1024);        
         System.out.println(pedidos.size());
