@@ -49,7 +49,7 @@ public static void main(String[] args) {
             listaPedidos.add(pedido);
         }
         System.out.println("KB: " + (double) (Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory()) / 1024);        
-        System.out.println(pedidos.size());    
+        System.out.println(listaPedidos.size());    
     }
 ```
 
@@ -79,7 +79,7 @@ public static void main(String[] args) {
             listaPedidos.add(pedido);                         
         }
         System.out.println("KB: " + (double) (Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory()) / 1024);        
-        System.out.println(pedidos.size());
+        System.out.println(listaPedidos.size());
     }
 ```
 
