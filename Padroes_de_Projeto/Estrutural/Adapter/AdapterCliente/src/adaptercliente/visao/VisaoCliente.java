@@ -6,6 +6,7 @@
 package adaptercliente.visao;
 
 import adaptercliente.model.Cliente;
+import adaptercliente.model.ICliente;
 
 /**
  *
@@ -100,7 +101,7 @@ public class VisaoCliente extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
 
     public  void setInformacoesCliente(ICliente cliente){
-        
+               
         String texto = "Nome:" +  cliente.getNomeCompleto() + " \n";        
         texto += "Email:" +  cliente.getEmail()+ " \n";  
         texto += "Telefone:" +  cliente.getTelefone()+ " \n";  
