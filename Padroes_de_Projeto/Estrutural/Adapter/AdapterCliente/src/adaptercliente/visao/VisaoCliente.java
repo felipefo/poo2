@@ -99,7 +99,7 @@ public class VisaoCliente extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 
-    public  void setInformacoesCliente(Cliente cliente){
+    public  void setInformacoesCliente(ICliente cliente){
         
         String texto = "Nome:" +  cliente.getNomeCompleto() + " \n";        
         texto += "Email:" +  cliente.getEmail()+ " \n";  
