@@ -6,24 +6,28 @@ import javax.swing.JOptionPane;
 
 
 public abstract class AbstractPagamentoHandler implements PagamentoHandler {
-    private PagamentoHandler pagamentoHandler;
+    private PagamentoHandler nextPagamentoHandler;
     @Override
     public void setNextHandler(PagamentoHandler handler) {
-        this.pagamentoHandler = handler;
+        this.nextPagamentoHandler = handler;
     }
     public void processHander(List lista, int valor) {                
         if(lista.contains(getTipoPagamento()))
               valor = handlePagamento(valor);                               
-        if (pagamentoHandler != null && valor >0)
-            this.pagamentoHandler.processHander(lista, valor);
+        if (nextPagamentoHandler != null && valor >0)
+            this.nextPagamentoHandler.processHander(lista, valor);
         
     }
     protected abstract int getTipoPagamento();
     protected int perguntaPagamento(String mensagem, int valor){
         String valorPagamento = JOptionPane.showInputDialog(mensagem);
-        int valorRestante = valor - Integer.parseInt(valorPagamento);
+        int valorRestante = 0;
+        if(!valorPagamento.equalsIgnoreCase("")){
+            valorRestante = valor - Integer.parseInt(valorPagamento);        
+        }
         return valorRestante;
     }    
+    
     protected abstract int handlePagamento(int valor);
 }
 
