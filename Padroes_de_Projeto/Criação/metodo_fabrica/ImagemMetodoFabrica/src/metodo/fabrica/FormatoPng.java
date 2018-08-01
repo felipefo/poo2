@@ -1,5 +1,5 @@
 
-package metodoestatico.fabrica;
+package metodo.fabrica;
 
 
 public class FormatoPng implements Formato{
