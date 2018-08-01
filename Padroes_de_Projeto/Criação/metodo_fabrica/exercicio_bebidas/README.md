@@ -1,9 +1,9 @@
 
-ExercÌcio -  MÈtodo F·brica - Modelo de classe de bebidas. 
+Exerc√≠cio -  M√©todo F√°brica - Modelo de classe de bebidas. 
 
-   Dado o diagrama abaixo implemente utilizando o padr„o mÈtodo f·brica.
-   <strong>N„o esqueÁa de criar a F·bric de Bebidas!!!</strong>
+   Dado o diagrama abaixo implemente utilizando o padr√£o m√©todo f√°brica.
+   <strong>N√£o esque√ßa de criar a F√°brica de Bebidas!!!</strong>
  
- ![alt text](https://github.com/felipefo/poo2/blob/master/Padroes_de_Projeto/CriaÁ„o/metodo_fabrica/exercicio_bebidas/metodo_fabrica_bebidas.png)
+ ![alt text](https://github.com/felipefo/poo2/blob/master/Padroes_de_Projeto/Cria√ß√£o/metodo_fabrica/exercicio_bebidas/metodo_fabrica_bebidas.png)
  
  
