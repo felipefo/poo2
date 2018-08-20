@@ -10,6 +10,6 @@ public class NonVegetarianoBuilder extends RefeicaoBuilder{
     }    
     public void prepadaHamburgerCarne(){
         System.out.println("cria hamburger carne");
-        this.refeicao.setHamburger(new HamburguerCarne());                
+        this.refeicao.setHamburguer(new HamburguerCarne());                
     }        
 }

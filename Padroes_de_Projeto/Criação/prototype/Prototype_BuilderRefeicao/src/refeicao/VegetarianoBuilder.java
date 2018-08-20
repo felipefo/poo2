@@ -9,7 +9,7 @@ public class VegetarianoBuilder extends RefeicaoBuilder{
     }        
     public void preparaHamburgerVegetariano(){
         System.out.println("cria hamburger vegetariano");
-        this.refeicao.setHamburger(new HamburguerVegetariano());                
+        this.refeicao.setHamburguer(new HamburguerVegetariano());                
     }        
 }
 

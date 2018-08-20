@@ -10,7 +10,7 @@ public class Refeicao implements Cloneable, Serializable{
     public Hamburguer getHamburguer() {
         return hamburguer;
     }    
-    public void setHamburger(Hamburguer hamburguer) {
+    public void setHamburguer(Hamburguer hamburguer) {
         this.hamburguer = hamburguer;
     }    
     public Bebida getBebida() {
@@ -24,7 +24,7 @@ public class Refeicao implements Cloneable, Serializable{
         try{            
             obj = (Refeicao)super.clone();
             obj.setBebida((Bebida) bebida.clone());
-            obj.setHamburger((Hamburguer) hamburguer.clone());
+            obj.setHamburguer((Hamburguer) hamburguer.clone());
             
         }catch (CloneNotSupportedException ex){
             ex.printStackTrace();
