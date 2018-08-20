@@ -7,11 +7,11 @@ import java.io.Serializable;
 public class Refeicao implements Cloneable, Serializable{    
     private Hamburguer hamburguer;
     private Bebida bebida;
-    public Hamburguer getHamburger() {
+    public Hamburguer getHamburguer() {
         return hamburguer;
     }    
-    public void setHamburger(Hamburguer hamburger) {
-        this.hamburguer = hamburger;
+    public void setHamburger(Hamburguer hamburguer) {
+        this.hamburguer = hamburguer;
     }    
     public Bebida getBebida() {
         return bebida;
