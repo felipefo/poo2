@@ -17,14 +17,17 @@ import javax.swing.JButton;
  *
  * @author felipe
  */
-public class Salvar extends JButton{
+public class Salvar extends JButton implements IBotaoComando{
 
     public javax.swing.JTextField text;
     
     public Salvar(javax.swing.JTextField text){
         this.text = text;                
     }
-        
+      
+    public void executar(){        
+        this.salvar();
+    }
         
     public void salvar() {       
          String current;

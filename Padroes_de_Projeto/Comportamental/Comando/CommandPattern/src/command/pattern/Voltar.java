@@ -16,12 +16,16 @@ import javax.swing.undo.UndoManager;
  *
  * @author felipe
  */
-public class Voltar extends JButton {
+public class Voltar extends JButton implements IBotaoComando {
     
     private UndoManager  undo;
     
     public Voltar(UndoManager  undo){                        
         this.undo = undo;
+    }
+    
+    public void executar(){
+        this.doVoltar();
     }
     
     public void doVoltar(){
