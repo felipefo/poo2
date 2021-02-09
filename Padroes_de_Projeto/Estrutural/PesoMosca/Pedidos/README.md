@@ -62,7 +62,7 @@ public static void main(String[] args) {
 ```
 
 Para a main com a implementação do padrão faça:<br>
-Perceba que essa chamada abaixo destacada utiliza um método estático da classe FlyweightStatusItem, mas você pode implementar sem utilizar um método estático. FlyweightStatusItem.get(StatusItem.Estado.CARRINHO)
+Perceba que no código abaixo utiliza um método estático da classe FlyweightStatusItem, mas você pode implementar sem utilizar um método estático. Método estático: FlyweightStatusItem.get(StatusItem.Estado.CARRINHO)
 
 ```
 public static void main(String[] args) {            
