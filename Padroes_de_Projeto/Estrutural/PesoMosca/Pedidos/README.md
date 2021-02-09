@@ -30,8 +30,6 @@ enum Estado {
 
 Implemente o modelo primeiramente sem utilizar o padrão FlyWeight e depois implemente com o padrão. 
 Crie duas classes Main, uma utilizando o padrão e outra sem utilizar o padrão.  
-Informe no exercício qual a diferença de consumo de memória para as duas implementações.
-
 Para a Main com a implementação sem o padrão faça:
 ```
 public static void main(String[] args) {            
@@ -92,7 +90,7 @@ public static void main(String[] args) {
     }
 ```
 
-Qual a diferença entre dos dois códigos?
+Informe no exercício qual a diferença de consumo de memória para as duas implementações. Qual a diferença entre dos dois códigos?
 
 
 
