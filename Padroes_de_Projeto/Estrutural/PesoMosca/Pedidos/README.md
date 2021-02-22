@@ -30,8 +30,6 @@ enum Estado {
 
 Implemente o modelo primeiramente sem utilizar o padrão FlyWeight e depois implemente com o padrão. 
 Crie duas classes Main, uma utilizando o padrão e outra sem utilizar o padrão.  
-Informe no exercício qual a diferença de consumo de memória para as duas implementações.
-
 Para a Main com a implementação sem o padrão faça:
 ```
 public static void main(String[] args) {            
@@ -62,7 +60,7 @@ public static void main(String[] args) {
 ```
 
 Para a main com a implementação do padrão faça:<br>
-Perceba que essa chamada abaixo destacada utiliza um método estático da classe FlyweightStatusItem, mas você pode implementar sem utilizar um método estático. FlyweightStatusItem.get(StatusItem.Estado.CARRINHO)
+Perceba que no código abaixo utiliza um método estático da classe FlyweightStatusItem, mas você pode implementar sem utilizar um método estático. Método estático: FlyweightStatusItem.get(StatusItem.Estado.CARRINHO)
 
 ```
 public static void main(String[] args) {            
@@ -92,7 +90,7 @@ public static void main(String[] args) {
     }
 ```
 
-Qual a diferença entre dos dois códigos?
+Informe no exercício qual a diferença de consumo de memória para as duas implementações. Qual a diferença entre dos dois códigos?
 
 
 
