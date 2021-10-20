@@ -25,7 +25,7 @@ public class ButtonOK  extends JButton{
     public ButtonOK(){
      Image img = null;
         try {
-            img = ImageIO.read(getClass().getResource("/Ok-icon.png"));
+            img = ImageIO.read(getClass().getResource("Ok-icon.png"));
         } catch (IOException ex) {
             Logger.getLogger(ButtonCancel.class.getName()).log(Level.SEVERE, null, ex);
         }
