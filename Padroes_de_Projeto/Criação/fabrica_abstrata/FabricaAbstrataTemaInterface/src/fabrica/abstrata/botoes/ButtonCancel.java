@@ -20,7 +20,7 @@ public class ButtonCancel extends JButton{
         
         Image img = null;
         try {
-            img = ImageIO.read(getClass().getResource("/Cancel-icon.jpg"));
+            img = ImageIO.read(getClass().getResource("Cancel-icon.jpg"));
         } catch (IOException ex) {
             Logger.getLogger(ButtonCancel.class.getName()).log(Level.SEVERE, null, ex);
         }
