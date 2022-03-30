@@ -5,6 +5,12 @@
  */
 package fabrica.sempadrao;
 
+import fabrica.abstrata.modelo.EnvioSMSTim;
+import fabrica.abstrata.modelo.EnvioSMSVivo;
+import fabrica.abstrata.modelo.EnvioSMS;
+import fabrica.abstrata.modelo.CobrancaTim;
+import fabrica.abstrata.modelo.Mensagem;
+import fabrica.abstrata.modelo.Cobranca;
 import fabrica.abstrata.*;
 import javax.swing.JOptionPane;
 

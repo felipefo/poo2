@@ -2,6 +2,9 @@
 
 package fabrica.abstrata;
 
+import fabrica.abstrata.modelo.EnvioSMS;
+import fabrica.abstrata.modelo.Cobranca;
+
 /**
  *
  * @author felipe

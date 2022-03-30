@@ -5,6 +5,11 @@
  */
 package fabrica.abstrata;
 
+import fabrica.abstrata.modelo.EnvioSMSVivo;
+import fabrica.abstrata.modelo.EnvioSMS;
+import fabrica.abstrata.modelo.CobrancaVivo;
+import fabrica.abstrata.modelo.Cobranca;
+
 /**
  *
  * @author felipe

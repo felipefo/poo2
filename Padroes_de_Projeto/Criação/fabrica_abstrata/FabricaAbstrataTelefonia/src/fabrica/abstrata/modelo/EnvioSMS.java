@@ -3,17 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package fabrica.abstrata;
+package fabrica.abstrata.modelo;
+
+import fabrica.abstrata.modelo.Mensagem;
 
 /**
  *
  * @author felipe
  */
-public class Mensagem {    
-    
-    String texto;    
-    public Mensagem(String texto){
-        this.texto = texto;
-    }      
-    
+public interface EnvioSMS {    
+    public boolean enviar(Mensagem msg, int telefone);                    
 }

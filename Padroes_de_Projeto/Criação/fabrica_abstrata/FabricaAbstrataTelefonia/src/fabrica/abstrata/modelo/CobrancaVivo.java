@@ -3,17 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package fabrica.abstrata;
+package fabrica.abstrata.modelo;
+
+import fabrica.abstrata.modelo.Cobranca;
 
 /**
  *
  * @author felip
  */
-public class CobrancaTim implements Cobranca {
+public class CobrancaVivo implements Cobranca {
 
     @Override
     public void cobrar(int telefone) {
-        System.out.println("Cobrar via tim");
+        System.out.println("Cobrar via vivo");
     }
-    
 }
