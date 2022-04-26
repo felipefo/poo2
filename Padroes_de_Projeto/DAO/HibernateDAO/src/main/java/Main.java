@@ -18,7 +18,7 @@ public class Main {
            veiculo.setTipo("carro");              
            
            
-           List lista = veiculoDAO.buscaVeiculosApartirDoAno(2009);
+           //List lista = veiculoDAO.buscaVeiculosApartirDoAno(2009);
            
            
            
