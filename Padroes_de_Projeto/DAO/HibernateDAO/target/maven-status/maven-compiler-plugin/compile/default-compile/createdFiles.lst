@@ -1,0 +1,10 @@
+Main.class
+org\hibernate\dialect\SQLiteDialect.class
+ReflectionMain.class
+example\hibernate\persistencia\GenericDAO.class
+example\hibernate\model\Veiculo.class
+example\hibernate\persistencia\VeiculoDAOImpl.class
+example\hibernate\persistencia\HibernateUtil.class
+example\hibernate\persistencia\VeiculoDAO.class
+org\hibernate\dialect\SQLiteDialect$1.class
+example\hibernate\persistencia\GenericDAOImpl.class
